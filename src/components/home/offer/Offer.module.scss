@@ -1,0 +1,52 @@
+@import '../../../styles/_variables.scss';
+
+.offerWrapper{
+  padding: 75px 0;
+  .offer{
+    max-width: $max-page-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .offerTitle{
+      text-align: center;
+      border-bottom: 5px solid $dark-pink;
+      padding: 0 0 15px 0;
+      font-size: 38px;
+      font-weight: $thin-bold;
+    }
+    .offerText{
+      margin: 25px 0;
+      font-weight: $thin-medium;
+      line-height: 22px;
+      font-size: 18px;
+      text-align: center;
+      max-width: 800px;
+    }
+  }
+  .singleOfferWrapper{
+    margin: 25px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+}
+
+@media(max-width: 1300px){
+  .offerWrapper{
+    .offer{
+      margin: 0 20px;
+    }
+    .singleOfferWrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .offerWrapper{
+    .singleOfferWrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

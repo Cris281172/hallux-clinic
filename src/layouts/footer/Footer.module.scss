@@ -1,0 +1,203 @@
+@import '../../styles/_variables.scss';
+
+.footerWrapper{
+  padding: 100px 0 0 0;
+  background-color: #fff;
+  .footer{
+    padding: 0 0 50px 0;
+    border-bottom: 2px solid $dark-pink;
+    max-width: $max-page-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    .haluxInformation{
+      margin: 0 0 0 50px;
+      padding: 0 25px 0 0;
+      border-right: 2px solid $dark-pink;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      .logo{
+        width: 100%;
+      }
+      .haluxSubtitle{
+        text-align: center;
+        font-size: 26px;
+        font-weight: $thin-bold;
+        margin: 15px 0;
+      }
+      .haluxText{
+        font-size: 20px;
+        font-weight: $thin-light;
+      }
+    }
+    .navigation{
+      padding: 0 25px 0 0;
+      border-right: 2px solid $dark-pink;
+      .navigationTitle{
+        font-size: 26px;
+        font-weight: $thin-bold;
+      }
+      .listOfLink{
+
+        .item{
+          margin: 15px 0 0 0;
+          .link{
+            transition: 0.5s;
+            &:hover{
+              font-weight: $thin-bold;
+            }
+            font-size: 22px;
+            font-weight: $thin-light;
+          }
+        }
+      }
+    }
+    .contact{
+      .contactTitle{
+        font-size: 26px;
+        font-weight: $thin-bold;
+      }
+      .sectionWrapper{
+        .contactSection{
+          margin: 20px 0 0 0;
+          .contactSectionTitle{
+            font-size: 20px;
+            margin: 0 0 6px 0;
+          }
+          .phoneNumber{
+            font-weight: $thin-weight;
+            font-size: 20px;
+            transition: 0.5s;
+            &:hover{
+              font-weight: $thin-bold;
+            }
+          }
+          .email{
+            font-size: 20px;
+            font-weight: $thin-weight;
+            transition: 0.5s;
+            &:hover{
+              font-weight: $thin-bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottomFooter{
+    text-align: center;
+    max-width: $max-page-width;
+    margin: 0 auto;
+    padding: 30px 15px;
+    .bottomFooterText{
+      font-size: 18px;
+      .author{
+        font-size: 20px;
+        color: $dark-pink;
+        &:hover{
+          color: $light-pink;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .footerWrapper{
+    .footer{
+      margin: 0 75px;
+      grid-template-columns: repeat(1, 1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .haluxInformation{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 25px 0;
+        border-right: none;
+        border-bottom: 2px solid $dark-pink;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        .haluxText{
+          text-align: center;
+        }
+      }
+      .navigation{
+        padding: 0 0 25px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: none;
+        border-bottom: 2px solid $dark-pink;
+        .listOfLink{
+          display: flex;
+          margin: 15px 0 0 0;
+          .item{
+            margin: 0 0 0 20px;
+            &:nth-of-type(1){
+              margin: 0;
+            }
+          }
+        }
+      }
+      .contact{
+        padding: 0 0 25px 0;
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .sectionWrapper{
+          display: flex;
+          margin: 15px 0 0 0;
+          .contactSection{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 30px 0 0;
+            &:nth-of-type(2){
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .footerWrapper{
+    .footer{
+      .navigation{
+        .listOfLink{
+          flex-direction: column;
+          align-items: center;
+          .item{
+            margin: 0 0 15px 0;
+            &:nth-of-type(1){
+              margin: 0 0 15px 0;
+            }
+          }
+        }
+      }
+      .contact{
+        .sectionWrapper{
+          flex-direction: column;
+          .contactSection{
+            margin: 0 0 15px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .footerWrapper{
+    .footer{
+      margin: 0 25px;
+    }
+  }
+}

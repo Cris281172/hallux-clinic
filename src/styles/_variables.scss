@@ -1,0 +1,36 @@
+// COLORS
+
+$example-color: #000;
+$light-pink: #FFD3CA;
+$dark-pink: #F28686;
+
+//FONTS
+
+$roboto-font: Roboto;
+
+//FONTS WEIGHT
+
+$thin-weight: 100;
+$thin-light: 300;
+$thin-regular: 400;
+$thin-medium: 500;
+$thin-bold: 700;
+$thin-black: 900;
+
+//MAX PAGE WIDTH
+
+$max-page-width: 1256px;
+
+//ANIMATIONS
+
+$show-animation: opacity-animation;
+
+
+@keyframes  opacity-animation{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

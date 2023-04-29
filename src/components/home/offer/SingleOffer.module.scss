@@ -1,0 +1,19 @@
+@import '../../../styles/_variables.scss';
+
+.singleOffer{
+  border-radius: 4px;
+  background-color: $light-pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  transition: 0.5s;
+  &:hover{
+    background-color: $dark-pink;
+  }
+  .singleOfferTitle{
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+}

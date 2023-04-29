@@ -1,0 +1,26 @@
+@import '../../../styles/_variables.scss';
+
+.locationWrapper{
+  background-color: #fff;
+
+  .location{
+    padding: 50px 0;
+    max-width: $max-page-width;
+    margin: 0 auto 0 auto;
+    .freeTransport{
+      display: flex;
+      align-items: center;
+      .locationIcon{
+        margin: 0 50px 0 0;
+        width: 250px;
+      }
+      .locationTitle{
+        font-size: 50px;
+      }
+    }
+  }
+  .mapImage{
+    width: 100%;
+  }
+}
+

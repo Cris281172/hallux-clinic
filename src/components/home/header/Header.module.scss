@@ -1,0 +1,100 @@
+@import '../../../styles/_variables.scss';
+
+.headerWrapper{
+  overflow: hidden;
+  position: relative;
+  background-color: $light-pink;
+  padding: 50px 0 100px 0;
+
+  .header{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: $max-page-width;
+    .logoWrapper{
+      position: relative;
+      width: 50%;
+      .logo{
+        animation: $show-animation 2s;
+        width: 100%;
+      }
+    }
+    .headerSection{
+      animation: $show-animation 2s;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      .logo{
+        width: 100%;
+      }
+      .headerText{
+        text-align: center;
+        max-width: 400px;
+        font-size: 20px;
+        font-weight: $thin-bold;
+        line-height: 25px;
+        margin: 20px 0;
+      }
+      .callButton{
+        color: #fff;
+        margin: 20px 0 0 0;
+        background-color: $dark-pink;
+        padding: 10px 20px;
+        border-radius: 16px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+          .phoneIcon{
+            animation: phoneRotate 0.8s linear infinite;
+          }
+        }
+        .phoneIcon{
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1400px){
+  .headerWrapper{
+    padding: 50px 40px 100px 40px;
+  }
+}
+
+@media(max-width: 900px){
+  .headerWrapper{
+    .header{
+      flex-direction: column;
+      .logoWrapper{
+        width: 100%;
+        order: 2;
+        margin: 50px 0 0 0;
+      }
+      .headerSection{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes phoneRotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(25deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-25deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
