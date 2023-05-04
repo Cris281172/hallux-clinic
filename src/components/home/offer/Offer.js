@@ -4,9 +4,9 @@ const Offer = () => {
     return(
         <div className={styles.offerWrapper}>
             <div className={styles.offer}>
-                <h2 className={styles.offerTitle}>Przejrzyj naszą ofertę</h2>
+                <h2 className={styles.offerTitle}>Zabiegi Podologiczne</h2>
                 <p className={styles.offerText}>
-                    Centrum Podologii i Diagnostyki Stóp PodoLog zaprasza do korzystania z bogatej oferty zabiegów podologicznych. Dodatkowo przeprowadzamy specjalistyczne pomiary stóp i wykonujemy indywidualne wkładki ortopedyczne.
+                    Dbaj o swoje stopy! Zabiegi podologiczne to sposób na zdrowe i zadbane stopy. Usuń odciski. modzele i grzybicę. Zarezerwuj wizytę u specjalistów już dziś!
                 </p>
                 <div className={styles.singleOfferWrapper}>
                     <SingleOffer name="Konsultacja podologiczna"/>

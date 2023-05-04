@@ -1,9 +1,8 @@
 @import '../../../styles/_variables.scss';
 
 .aboutMeWrapper{
-  margin: 50px 0;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 100px 0;
   position: relative;
   background-color: $light-pink;
   .aboutMe{
@@ -17,16 +16,32 @@
       font-weight: 700;
       border-bottom: 5px solid $dark-pink;
       padding: 0 0 15px 0;
+      opacity: 0;
+      transition: 1s;
     }
+    .aboutMeTitleActive{
+      opacity: 1;
+    }
+
     .aboutMeInformation{
       display: flex;
       justify-content: space-between;
       margin: 50px 0 0 0;
       width: 100%;
+      position: relative;
       .selfPhoto{
+        position: relative;
         width: 35%;
+        left: -100%;
+        transition: 1s;
+      }
+      .selfPhotoActive{
+        left: 0;
       }
       .textSection{
+        transition: 1s;
+        right: -100%;
+        position: relative;
         border-left: 2px solid $dark-pink;
         padding: 20px 0 0 50px;
         width: 50%;
@@ -45,6 +60,9 @@
           align-items: center;
           justify-content: center;
         }
+      }
+      .textSectionActive{
+        right: 0;
       }
     }
   }
@@ -87,5 +105,14 @@
       }
 
     }
+  }
+}
+
+@keyframes opacityShow {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }
