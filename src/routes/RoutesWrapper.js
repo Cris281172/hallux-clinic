@@ -7,6 +7,7 @@ import Contact from "../components/contact/Contact";
 import PriceList from "../components/home/price-list/PriceList";
 import AboutMe from "../components/about-me/AboutMe";
 import Result from "../components/contact/Result";
+import PrivacyPolicy from "../components/cookies/PrivacyPolicy";
 const RoutesWrapper = () => {
     return(
         <Routes>
@@ -18,6 +19,7 @@ const RoutesWrapper = () => {
                 <Route path="/o-mnie" element={<AboutMe />} />
                 <Route path="/kontakt" element={<Contact /> } />
                 <Route path="/kontakt/:status" element={<Result />} />
+                <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
 
             </Route>
         </Routes>

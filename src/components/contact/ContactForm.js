@@ -119,6 +119,11 @@ const ContactForm = () => {
                                 ) : null}
                             </div>
                         </div>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>Wyrażam zgodę</span>
+                        </label>
+
                         <button className={styles.submitButton} type="submit" disabled={loading ? true : false}>{loading ? 'Wysyłanie' : 'Wyślij formularz'}</button>
                         <p className={styles.information}>Wizyty odbywają się po wcześniejszej rezerwacji telefonicznej!</p>
                     </form>
