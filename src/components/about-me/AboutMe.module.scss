@@ -1,0 +1,106 @@
+@import '../../styles/_variables.scss';
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.aboutMe{
+  margin: 75px 0;
+  .titleWrapper{
+    display: flex;
+    justify-content: center;
+    .aboutMeTitle{
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+  .topInfoWrapper{
+    margin: 20px 0 50px 0;
+    display: flex;
+    align-items: center;
+    .title{
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .text{
+      margin: 20px 0;
+      line-height: 26px;
+      font-size: 20px;
+      font-weight: 200;
+    }
+    .selfPhoto{
+      margin-left: 30px;
+    }
+  }
+  .peopleWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .people{
+      display: flex;
+      padding: 20px;
+      border: 2px solid $dark-pink;
+      border-radius: 16px;
+      .information{
+        margin-right: 25px;
+        width: 50%;
+        .title{
+          font-size: 26px;
+        }
+        .paragraph{
+          font-size: 18px;
+          font-weight: 200;
+          margin: 10px 0;
+        }
+        .list{
+          .item{
+            font-size: 18px;
+            font-weight: 200;
+            margin-left: 10px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+      .image{
+        width: 50%;
+        height: 90%;
+      }
+    }
+  }
+}
+
+@media(max-width: 1256px){
+  .aboutMe{
+    .peopleWrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media(max-width: 700px){
+  .aboutMe{
+    .topInfoWrapper{
+      flex-direction: column;
+      .selfPhoto{
+        order: 1;
+        margin: 0;
+      }
+      .text{
+        order: 2;
+      }
+    }
+    .peopleWrapper{
+      .people{
+        flex-direction: column;
+        .information{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../styles/_variables.scss';
+
+.container{
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.contact{
+  margin-top: 80px;
+  .contactTitleWrapper{
+    display: flex;
+    justify-content: center;
+    .contactTitle{
+      font-size: 38px;
+      font-weight: 700;
+      border-bottom: 5px solid $dark-pink;
+      padding: 0 0 15px 0;
+    }
+  }
+  .contactComponentsWrapper{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .contactForm, .contactInformation {
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .contact{
+    .contactComponentsWrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

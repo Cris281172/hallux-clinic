@@ -1,8 +1,11 @@
 import styles from './SingleOffer.module.scss'
 import {Link} from 'react-router-dom'
-const SingleOffer = ({name, link}) => {
+import {useEffect, useState} from "react";
+const SingleOffer = ({name, link, image}) => {
+    const[visibleOfSection, setVisibleOfSection] = useState(false)
+
     return(
-        <Link to={link} className={styles.singleOffer}>
+        <Link to={link} className={styles.singleOffer} style={{backgroundImage: `url(${image})`}}>
             <h5 className={styles.singleOfferTitle}>{name}</h5>
         </Link>
     )

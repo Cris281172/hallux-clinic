@@ -1,0 +1,28 @@
+.contactInformation{
+  width: 100%;
+  margin-left: 50px;
+  .item{
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    .icon{
+      font-size: 30px;
+      color: #F28686;
+    }
+    .title{
+      margin: 0 8px;
+    }
+    .value{
+      font-weight: 400;
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .contactInformation{
+    padding-top: 20px;
+    margin-left: 0;
+  }
+}

@@ -1,9 +1,18 @@
+.hidden{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.visible{
+  opacity: 1;
+  transition: 0.5s;
+}
+
 .circle{
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
   opacity: 0.4;
-
 }
 
 .verySmall{

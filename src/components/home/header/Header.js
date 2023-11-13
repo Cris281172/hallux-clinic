@@ -1,6 +1,6 @@
 import styles from './Header.module.scss'
-import headerLogo from '../../../images/home/header/header-logo.svg'
-import logo from '../../../images/home/header/logo.svg'
+import headerLogo from '../../../images/home/header/header-logo.webp'
+import logo from '../../../images/home/header/logo.webp'
 import Circle from "../../../layouts/circle/Circle";
 import { BsTelephoneFill } from "react-icons/bs";
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
                         Profesjonalna opieka w wygodnym miejscu i czasie dla Ciebie.
                         Umów się już dziś!
                     </p>
-                    <a href="tel:+00000000" className={styles.callButton}><BsTelephoneFill className={styles.phoneIcon} /> Zadzwoń</a>
+                    <a href="tel:+48459410096" className={styles.callButton}><BsTelephoneFill className={styles.phoneIcon} /> Zadzwoń</a>
                 </div>
             </header>
             <Circle size="veryBig" right="-75px" bottom="-150x"/>

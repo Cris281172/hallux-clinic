@@ -21,7 +21,7 @@ const Navigation = () => {
                         <NavLink to="/" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>Hallux.Clinic</NavLink>
                     </li>
                     <li className={styles.item}>
-                        <NavLink to="/oferta" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>Oferta</NavLink>
+                        <NavLink to="/usluga" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>Usługa</NavLink>
                     </li>
                     <li className={styles.item}>
                         <NavLink to="o-mnie" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>O Mnie</NavLink>

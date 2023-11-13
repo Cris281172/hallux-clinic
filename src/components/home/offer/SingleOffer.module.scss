@@ -1,19 +1,40 @@
 @import '../../../styles/_variables.scss';
 
+
 .singleOffer{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 4px;
-  background-color: $light-pink;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px 20px;
+  height: 400px;
+  position: relative;
+  padding: 0 20px;
   transition: 0.5s;
-  &:hover{
+  &:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     background-color: $dark-pink;
+    transition: 0.5s;
+  }
+  &:hover{
+    &:after{
+      opacity: 0.4;
+    }
   }
   .singleOfferTitle{
+    color: #fff;
     font-size: 26px;
     text-transform: uppercase;
   }
 }
+
+

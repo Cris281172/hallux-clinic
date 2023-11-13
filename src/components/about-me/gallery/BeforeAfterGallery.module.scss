@@ -1,0 +1,36 @@
+
+.beforeAfterGalleryWrapper{
+  margin-top: 50px;
+  .titleWrapper{
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: center;
+    .title{
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+  .beforeAfterGallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+  }
+}
+
+@media(max-width: 800px){
+  .beforeAfterGalleryWrapper{
+    .beforeAfterGallery{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .beforeAfterGalleryWrapper{
+    .beforeAfterGallery{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

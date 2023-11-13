@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss'
-import logo from '../../images/home/header/logo.svg'
+import logo from '../../images/home/header/logo.webp'
 import {Link} from 'react-router-dom'
 const Footer = () => {
     return(
@@ -7,23 +7,23 @@ const Footer = () => {
             <footer className={styles.footer}>
                 <div className={styles.haluxInformation}>
                     <img src={logo} alt="headerLogo" className={styles.logo}/>
-                    <h5 className={styles.haluxSubtitle}>Pogotowie podologiczne Halux</h5>
-                    <p className={styles.haluxText}>jest efektem wielkiej pasji i fascynacji nowoczesnymi metodami leczenia i pielęgnacji stóp.</p>
+                    <h5 className={styles.haluxSubtitle}>Pogotowie podologiczne Hallux</h5>
+                    <p className={styles.haluxText}>Jest efektem wielkiej pasji i fascynacji nowoczesnymi metodami leczenia i pielęgnacji stóp.</p>
                 </div>
                 <nav className={styles.navigation}>
                     <h5 className={styles.navigationTitle}>Nawigacja</h5>
                     <ul className={styles.listOfLink}>
                         <li className={styles.item}>
-                            <Link to="" className={styles.link}>Oferta</Link>
+                            <Link to="/usluga" className={styles.link}>Usługa</Link>
                         </li>
                         <li className={styles.item}>
-                            <Link to="" className={styles.link}>O mnie</Link>
+                            <Link to="/o-mnie" className={styles.link}>O mnie</Link>
                         </li>
                         <li className={styles.item}>
-                            <Link to="" className={styles.link}>Cennik</Link>
+                            <Link to="/cennik" className={styles.link}>Cennik</Link>
                         </li>
                         <li className={styles.item}>
-                            <Link to="" className={styles.link}>Kontakt</Link>
+                            <Link to="/kontakt" className={styles.link}>Kontakt</Link>
                         </li>
                     </ul>
                 </nav>
@@ -32,18 +32,18 @@ const Footer = () => {
                     <div className={styles.sectionWrapper}>
                         <div className={styles.contactSection}>
                             <h6 className={styles.contactSectionTitle}>Numer telefonu</h6>
-                            <a  href="tel:+502535912" className={styles.phoneNumber}>+48 502 535 912</a>
+                            <a  href="tel:+48459410096" className={styles.phoneNumber}>+48 459 410 096</a>
                         </div>
                         <div className={styles.contactSection}>
                             <h6 className={styles.contactSectionTitle}>Email</h6>
-                            <a  href="mailto:mjuczynska@interia.pl" className={styles.email}>mjuczynska@interia.pl</a>
+                            <a  href="mailto:hallux.clinic@gmail.com" className={styles.email}>hallux.clinic@gmail.com</a>
                         </div>
                     </div>
 
                 </div>
             </footer>
             <div className={styles.bottomFooter}>
-                <p className={styles.bottomFooterText}>&copy; Wszelkie prawa zastrzeżone | Designed By <a href="" className={styles.author}>Krzysztof Senior Juczyński</a> | Created By <a href="https://juczynski.pl" className={styles.author}>Krzysztof Junior Juczyński</a></p>
+                <p className={styles.bottomFooterText}>&copy; Wszelkie prawa zastrzeżone | Created By <a href="https://juczynski.pl" className={styles.author}>Krzysztof Junior Juczyński</a></p>
             </div>
         </div>
     )
