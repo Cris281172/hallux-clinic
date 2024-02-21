@@ -39,9 +39,6 @@ const BeforeAfterGallery = () => {
 
     return(
         <div className={styles.beforeAfterGalleryWrapper}>
-            <div className={styles.titleWrapper}>
-                <h2 className={styles.title}>Spektrum przypadków</h2>
-            </div>
             <div className={styles.beforeAfterGallery}>
                 <ReactCompareSlider
                     itemOne={<ReactCompareSliderImage src={after1} alt="Image one" />}

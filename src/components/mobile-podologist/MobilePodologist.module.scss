@@ -1,0 +1,44 @@
+@import '../../styles/_variables.scss';
+.mobilePodologistWrapper{
+  margin: 80px 0;
+  .mobilePodologistTitleWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .mobilePodologistTitle{
+      text-align: center;
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+      margin: 0 25px;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+  .mobilePodologistSubtitle{
+    font-size: 26px;
+  }
+  .mobilePodologistText{
+    padding: 12px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+  .mobilePodologistSection{
+    margin: 10px 0;
+    background-color: $light-pink;
+  }
+  .mobilePodologistImage{
+    max-width: 250px;
+  }
+  .mobilePodologistSectionTitle{
+    font-size: 20px;
+  }
+  .mobilePodologistList{
+    margin: 10px 0;
+    .mobilePodologistItem{
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

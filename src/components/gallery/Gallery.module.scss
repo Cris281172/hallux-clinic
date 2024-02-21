@@ -1,0 +1,16 @@
+@import '../../styles/_variables.scss';
+
+.gallery{
+  margin: 80px 0;
+  .galleryTitleWrapper{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    .galleryTitle{
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+}

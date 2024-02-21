@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <div className={styles.aboutMeInformation}>
                     <img className={styles.selfPhoto} src={selfPhoto} alt="selfPhoto" />
                     <div className={styles.textSection}>
-                        <p className={styles.text}>&nbsp;&nbsp; Współpraca to podstawa, dlatego w moim gabinecie przy współudziale wielu specjalistów jesteśmy w stanie postawić trafną diagnozę, a tym samym włączyć skuteczne leczenie. <br/> W centrum naszego zainteresowania pozostaje pacjent, jego zadowoloenie i zaufanie, dlatego współpracuję z najlepszymi ekspertami, aby optymalnie wykorzystać różnorodność metod i technik. Działając zespołowo zapewniamy szeroki zakres usług i profesionalizm naszym pacjentom.</p>
+                        <p className={styles.text}>Współpraca to podstawa, dlatego w moim gabinecie przy współudziale wielu specjalistów jesteśmy w stanie postawić trafną diagnozę, a tym samym włączyć skuteczne leczenie. <br/> W centrum naszego zainteresowania pozostaje pacjent, jego zadowoloenie i zaufanie, dlatego współpracuję z najlepszymi ekspertami, aby optymalnie wykorzystać różnorodność metod i technik. Działając zespołowo zapewniamy szeroki zakres usług i profesionalizm naszym pacjentom.</p>
                         <Link to="/o-mnie" className={styles.seeMore}>Zobacz więcej</Link>
                     </div>
                 </div>

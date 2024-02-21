@@ -2,15 +2,18 @@ import styles from './Navigation.module.scss'
 import {NavLink} from 'react-router-dom'
 import Circle from "../circle/Circle";
 import {useState} from 'react';
+import followUsImage from '../../images/home/header/follow-us.webp'
 const Navigation = () => {
     const[isMenuActive, setIsMenuActive] = useState(false)
     const toggleMenu = () => {
         setIsMenuActive(prev => prev ? false : true)
-        console.log(isMenuActive);
     }
     return(
         <div className={styles.navigationWrapper}>
             <nav className={styles.navigation}>
+                <a href="https://www.facebook.com/profile.php?id=61551609556581" target="_blank" className={styles.followUsLink}>
+                    <img className={styles.followUsImage} src={followUsImage} alt="Follow Us" />
+                </a>
                 <div className={isMenuActive ? `${styles.hamburgerMenu} ${styles.activeMenu}` : `${styles.hamburgerMenu}`} onClick={toggleMenu}>
                     <span />
                     <span />
@@ -28,6 +31,9 @@ const Navigation = () => {
                     </li>
                     <li className={styles.item}>
                         <NavLink to="/cennik" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>Cennik</NavLink>
+                    </li>
+                    <li className={styles.item}>
+                        <NavLink to="/galeria" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>Galeria</NavLink>
                     </li>
                     <li className={styles.item}>
                         <NavLink to="/kontakt" className={({ isActive }) => (isActive ? `${styles.link} ${styles.activeLink}` : styles.link)} onClick={() => setIsMenuActive(false)}>Kontakt</NavLink>

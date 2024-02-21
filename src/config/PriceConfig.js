@@ -45,7 +45,7 @@ export default {
                 },
                 {
                     value: 'Każdy kolejny odcisk równolegle',
-                    price: '30,00'
+                    price: '40,00'
                 },
                 {
                     value: 'Terapia brodawki wirusowej (kurzajka) 1-2 zmiany',
@@ -79,7 +79,7 @@ export default {
                 },
                 {
                     value: 'więcej',
-                    price: '180,00'
+                    price: '200,00'
                 },
                 {
                     value: 'Rekonstrukcja paznokcia',
@@ -97,19 +97,19 @@ export default {
             items: [
                 {
                     value: 'Założenie klamry korygującej',
-                    price: '180,00'
+                    price: '200,00'
                 },
                 {
                     value: 'Przełożenie klamry korygującej',
-                    price: '100,00'
+                    price: '130,00'
                 },
                 {
                     value: 'Podklejenie klamry korygującej',
-                    price: '50,00'
+                    price: '80,00'
                 },
                 {
                     value: 'Zdjęcie klamry korygującej na zakończenie zabiegu',
-                    price: '70,00'
+                    price: '90,00'
                 },
             ],
             link: 'ortonyksja'

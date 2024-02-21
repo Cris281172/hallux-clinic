@@ -13,14 +13,20 @@ const Header = () => {
                 </div>
                 <div className={styles.headerSection}>
                     <img className={styles.logo} src={logo} alt="Logo" />
-                    <p className={styles.headerText}>
-                        Stop bólowi stóp!
-                        Zaufaj naszemu doświadczonemu podologowi
-                        i ciesz się komfortem każdego kroku.
-                        Profesjonalna opieka w wygodnym miejscu i czasie dla Ciebie.
-                        Umów się już dziś!
-                    </p>
+                    <div className={styles.headerText}>
+                        <h2 className={`${styles.headerTextTitle}`}>
+                            <span className={styles.firstLetter}>M</span>obilny
+                        </h2>
+                        <h2 className={`${styles.headerTextTitle} ${styles.secondTitle}`}>
+                            <span className={styles.firstLetter}>G</span>abinet
+                        </h2>
+                        <h2 className={`${styles.headerTextTitle} ${styles.thirdTitle}`}>
+                            <span className={styles.firstLetter}>P</span>odologiczny
+                        </h2>
+                    </div>
                     <a href="tel:+48459410096" className={styles.callButton}><BsTelephoneFill className={styles.phoneIcon} /> Zadzwoń</a>
+                    <p className={`${styles.bottomText} ${styles.mainText}`}><span className={styles.arrow}>&gt;&gt;&gt;&gt;</span> Pielęgnacja Stóp z Dojazdem <span className={styles.arrow}>&lt;&lt;&lt;&lt;</span></p>
+                    <p className={`${styles.bottomText} ${styles.mobileText}`}><span className={styles.arrow}>&gt;&gt;&gt;&gt;</span> Dojazd Gratis <span className={styles.arrow}>&lt;&lt;&lt;&lt;</span></p>
                 </div>
             </header>
             <Circle size="veryBig" right="-75px" bottom="-150x"/>

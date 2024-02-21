@@ -1,0 +1,62 @@
+@import '../../../styles/_variables.scss';
+
+.reviews{
+  margin-top: 80px;
+  background-color: $light-pink;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+  .reviewsTitleWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    .reviewsTitle{
+      font-size: 38px;
+      font-weight: 700;
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+    }
+  }
+  .reviewWrapper{
+    align-items: center;
+    display: flex;
+    .changeReview{
+      cursor: pointer;
+      padding: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid transparent;
+      transition: 0.3s;
+      &:hover{
+        border: 1px solid $dark-pink;
+      }
+      .icon{
+        color: $dark-pink;
+        font-size: 32px;
+      }
+    }
+    .changeReview.prev{
+      .icon{
+        transform: rotate(-90deg);
+      }
+    }
+    .changeReview.next{
+      .icon{
+        transform: rotate(90deg);
+      }
+    }
+
+  }
+}
+
+@media(max-width: 500px){
+  .reviews{
+    .reviewWrapper{
+      align-items: unset;
+      .changeReview{
+        padding: 0 4px;
+        border-radius: unset;
+      }
+    }
+  }
+}

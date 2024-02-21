@@ -7,7 +7,7 @@
 }
 
 .aboutMe{
-  margin: 75px 0;
+  margin: 80px 0;
   .titleWrapper{
     display: flex;
     justify-content: center;
@@ -21,20 +21,34 @@
   .topInfoWrapper{
     margin: 20px 0 50px 0;
     display: flex;
-    align-items: center;
-    .title{
-      font-size: 26px;
-      font-weight: bold;
+    .topInfo{
+      width: 70%;
+      .title{
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .text{
+        margin: 20px 0;
+        line-height: 26px;
+        font-size: 20px;
+        font-weight: 200;
+      }
+      .list{
+        margin-top: 12px;
+        .item{
+          font-size: 16px;
+        }
+      }
     }
-    .text{
-      margin: 20px 0;
-      line-height: 26px;
-      font-size: 20px;
-      font-weight: 200;
+
+    .selfPhotoWrapper{
+      margin-left: 80px;
+      width: 30%;
+      .selfPhoto{
+        width: 100%;
+      }
     }
-    .selfPhoto{
-      margin-left: 30px;
-    }
+
   }
   .peopleWrapper{
     display: grid;
@@ -65,9 +79,11 @@
           }
         }
       }
-      .image{
-        width: 50%;
-        height: 90%;
+      .imageWrapper{
+        width: 45%;
+        .image{
+          width: 100%;
+        }
       }
     }
   }
@@ -85,13 +101,18 @@
   .aboutMe{
     .topInfoWrapper{
       flex-direction: column;
-      .selfPhoto{
-        order: 1;
-        margin: 0;
-      }
-      .text{
+      .topInfo{
         order: 2;
+        width: 100%;
       }
+      .selfPhotoWrapper{
+        order: 1;
+        margin: 0 0 40px 0;
+        width: 60%;
+        .selfPhoto{
+        }
+      }
+
     }
     .peopleWrapper{
       .people{
@@ -99,6 +120,12 @@
         .information{
           width: 100%;
           margin-bottom: 20px;
+        }
+        .imageWrapper{
+          width: 100%;
+          .image{
+            width: 100%;
+          }
         }
       }
     }

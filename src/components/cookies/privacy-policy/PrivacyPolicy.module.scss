@@ -1,0 +1,66 @@
+@import '../../../styles/_variables.scss';
+
+.privacyPolicy {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.container{
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+table{
+  width: 500px;
+}
+td{
+  text-align: center;
+  font-weight: normal;
+}
+table,
+td, th {
+  padding: 8px 0;
+  border: 1px solid #333;
+}
+
+
+.privacyPolicy p, li{
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  line-height: 20px;
+}
+.privacyPolicy li{
+  list-style: disc;
+  margin: 4px 0 4px 26px;
+}
+.privacyPolicy h5, p{
+  margin: 12px 0;
+}
+.privacyPolicy h4{
+  font-size: 26px;
+}
+.privacyPolicy{
+  margin-top: 80px;
+  .contactTitleWrapper{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    .contactTitle{
+      font-size: 38px;
+      font-weight: 700;
+      border-bottom: 5px solid $dark-pink;
+      padding: 0 0 15px 0;
+    }
+  }
+}
+
+@media(max-width: 900px){
+  table{
+    width: 100%;
+  }
+}

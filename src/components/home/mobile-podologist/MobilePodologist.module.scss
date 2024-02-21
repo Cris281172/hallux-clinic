@@ -1,0 +1,87 @@
+@import '../../../styles/_variables.scss';
+.mobilePodologistWrapper{
+  background-color: $light-pink;
+  padding: 100px 0;
+  .mobilePodologist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .mobilePodologistTitle{
+      font-size: 38px;
+      font-weight: 700;
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+    }
+    .mobilePodologistContent{
+      margin-top: 25px;
+      display: flex;
+      gap: 50px;
+      .textWrapper{
+        width: 70%;
+        .text{
+          font-size: 20px;
+          line-height: 25px;
+        }
+        .seeMore{
+          cursor: pointer;
+          width: 100%;
+          color: #fff;
+          margin: 25px 0 0 0;
+          background-color: #F28686;
+          padding: 10px 20px;
+          border-radius: 16px;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          transition: 0.5s;
+          justify-content: center;
+          &:hover{
+            border-bottom: 3px solid white;
+            border-radius: 0;
+          }
+        }
+      }
+      .imageWrapper{
+        width: 30%;
+        .image{
+          border-radius: 20px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 900px){
+  .mobilePodologistWrapper{
+    .mobilePodologist{
+      .mobilePodologistContent{
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        .textWrapper{
+          order: 2;
+          width: 100%;
+          text-align: center;
+        }
+        .imageWrapper{
+          order: 1;
+          width: 50%;
+
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .mobilePodologistWrapper{
+    .mobilePodologist{
+      .mobilePodologistContent{
+        .imageWrapper{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

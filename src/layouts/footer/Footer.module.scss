@@ -3,34 +3,49 @@
 .footerWrapper{
   padding: 100px 0 0 0;
   background-color: #fff;
+  .haluxInformation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    .logo{
+      width: 25%;
+    }
+    .haluxSubtitle{
+      text-align: center;
+      font-size: 26px;
+      font-weight: $thin-bold;
+      margin: 15px 0;
+    }
+    .haluxText{
+      font-size: 20px;
+      font-weight: $thin-light;
+    }
+    .socialMedia{
+      margin-top: 20px;
+      .socialMediaTitle{
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .facebookLink{
+        display: inline-block;
+        margin-top: 12px;
+        .facebookIcon{
+          font-size: 42px;
+          color: #0866ff
+        }
+      }
+    }
+  }
   .footer{
     padding: 0 0 50px 0;
     border-bottom: 2px solid $dark-pink;
     max-width: $max-page-width;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    .haluxInformation{
-      margin: 0 0 0 50px;
-      padding: 0 25px 0 0;
-      border-right: 2px solid $dark-pink;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      .logo{
-        width: 100%;
-      }
-      .haluxSubtitle{
-        text-align: center;
-        font-size: 26px;
-        font-weight: $thin-bold;
-        margin: 15px 0;
-      }
-      .haluxText{
-        font-size: 20px;
-        font-weight: $thin-light;
-      }
-    }
+    justify-content: space-between;
+
     .navigation{
       padding: 0 25px 0 0;
       border-right: 2px solid $dark-pink;
@@ -44,11 +59,20 @@
           margin: 15px 0 0 0;
           .link{
             transition: 0.5s;
-            &:hover{
-              font-weight: $thin-bold;
-            }
             font-size: 22px;
             font-weight: $thin-light;
+          }
+          .sublistOfLink{
+            margin-top: 4px;
+            list-style: circle;
+            margin-left: 12px;
+            .sublistOfLinkItem{
+              margin-left: 16px;
+              .sublistOfLinkItemLink{
+                font-size: 16px;
+                font-weight: $thin-light;
+              }
+            }
           }
         }
       }
@@ -69,17 +93,11 @@
             font-weight: $thin-weight;
             font-size: 20px;
             transition: 0.5s;
-            &:hover{
-              font-weight: $thin-bold;
-            }
           }
           .email{
             font-size: 20px;
             font-weight: $thin-weight;
             transition: 0.5s;
-            &:hover{
-              font-weight: $thin-bold;
-            }
           }
         }
       }
@@ -169,21 +187,33 @@
 
 @media(max-width: 600px){
   .footerWrapper{
+    .haluxInformation{
+      .logo{
+        width: 60%;
+      }
+    }
     .footer{
       .navigation{
         .listOfLink{
           flex-direction: column;
           align-items: center;
           .item{
+            text-align: center;
             margin: 0 0 15px 0;
             &:nth-of-type(1){
               margin: 0 0 15px 0;
+            }
+            .sublistOfLink{
+              margin-top: 6px;
+              margin-left: 0;
+              list-style: none;
             }
           }
         }
       }
       .contact{
         .sectionWrapper{
+          margin-top: 50px;
           flex-direction: column;
           .contactSection{
             margin: 0 0 15px 0;

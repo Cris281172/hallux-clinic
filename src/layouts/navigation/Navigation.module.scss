@@ -6,10 +6,22 @@
   padding: 50px 0 50px 0;
 
   .navigation{
-    display: flex;
     justify-content: flex-end;
+    display: flex;
     max-width: $max-page-width;
     margin: 0 auto;
+    position: relative;
+    .followUsLink{
+      z-index: 2;
+      left: 50px;
+      bottom: 50%;
+      transform: translateY(50%);
+      position: absolute;
+      width: 125px;
+      .followUsImage{
+        width: 100%;
+      }
+    }
 
     .listOfLinks {
       margin: 0 50px 0 0;
@@ -124,7 +136,7 @@
         right: -50px;
         width: 100%;
         flex-direction: column;
-        z-index: 2;
+        z-index: 500;
         background-color: #ffd3ca;
         align-items: center;
         transition: 0.4s;
@@ -143,7 +155,7 @@
       }
       .hamburgerMenu{
         display: block;
-        z-index: 3;
+        z-index: 501;
       }
     }
   }

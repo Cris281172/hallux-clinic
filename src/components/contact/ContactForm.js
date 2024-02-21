@@ -58,29 +58,30 @@ const ContactForm = () => {
         for(const prop in values){
             formData.append(prop, values[prop])
         }
-        console.log(formData)
+
         fetch('https://hallux.clinic/contact-hallux.php', {
             method: 'POST',
             body: formData,
-            headers: {
-                "Content-Type": "application/json",
-            },
         })
-            .then(response => response.text())
-            .then(res => {
-                if(res.status === '200'){
-                    setLoading(false)
-                    navigate('/kontakt/sukces')
-                }
-                else{
-                    setLoading(false)
-                    navigate('/kontakt/blad')
+            .then(response => {
+                if (response.ok) {
+                    return response.text().then(text => {
+                        console.log('Sukces:', text);
+                        navigate('/kontakt/sukces');
+                        return text;
+                    });
+                } else {
+                    // Obsługa odpowiedzi z kodem błędu
+                    console.error('Błąd serwera:', response.status);
+                    navigate('/kontakt/blad');
+                    throw new Error('Błąd serwera');
                 }
             })
-            .catch(() => {
-                setLoading(false)
-                navigate('/kontakt/blad')
-            })
+            .catch(error => {
+                console.error('Błąd:', error);
+                setLoading(false);
+                navigate('/kontakt/blad');
+            });
     }
 
     return(
@@ -119,10 +120,33 @@ const ContactForm = () => {
                                 ) : null}
                             </div>
                         </div>
-                        <label>
-                            <input type="checkbox"/>
-                            <span>Wyrażam zgodę</span>
-                        </label>
+                        <p className={styles.adminInfromation}>
+                            Administratorem Pani/Pana danych osobowych jest Monika Juczyńska Hallux Clinic z siedzibą w Łodzi
+                            przy ul. Armii Krajowej 44/13, 94-046 Łódź NIP7261496883
+                            Wszelkie pytania dotyczące przetwarzania Pani/Pana danych osobowych należy kierować na adres
+                            mjuczynska@interia.pl lub na podany powyżej adres poczty tradycyjnej.
+                            Pani/Pana dane będą przetwarzane w celu obsługi Pani/Pana zapytania przez okres niezbędny dla
+                            realizacji tego celu.
+                            Przetwarzanie Pani/Pana danych osobowych będzie odbywać się na podstawie art. 6 pkt 1 lit. f)
+                            Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie
+                            ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
+                            przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie
+                            danych) (Dz. Urz. UE L nr 119 str. 1) („RODO”) w prawnie usprawiedliwionym interesie
+                            Administratora Danych jakim jest obsługa Pani/Pana zapytania zgodnie z wybranym tematem oraz
+                            ochrona przed ewentualnymi roszczeniami na drodze cywilnej związanymi z realizacją Pani/Pana
+                            zapytania.
+                            Dane będą przechowywane nie dłużej niż jest to konieczne do udzielenia odpowiedzi, a po tym czasie
+                            mogą być przetwarzane do czasu upływu przedawnienia ewentualnych roszczeń.
+                            Administrator nie stosuje zautomatyzowanego podejmowania decyzji, w tym profilowania.
+                            Przysługuje Pani/Panu prawo dostępu do treści swoich danych oraz prawo ich poprawiania,
+                            sprostowania, usunięcia, ograniczenia przetwarzania, prawo do przenoszenia danych, prawo do
+                            wniesienia sprzeciwu wobec przetwarzania danych.
+                            Ponadto ma Pani/Pan prawo do wniesienia skargi do organu nadzorczego, którym jest Prezes Urzędu
+                            Ochrony Danych Osobowych, gdy uzna Pani/Pan, iż przetwarzanie danych osobowych dotyczących
+                            Pani/Pana narusza przepisy RODO.
+                            Podanie danych osobowych jest dobrowolne ale niezbędne do przetworzenia Pani/Pana zapytania i
+                            udzielenia odpowiedzi.
+                        </p>
 
                         <button className={styles.submitButton} type="submit" disabled={loading ? true : false}>{loading ? 'Wysyłanie' : 'Wyślij formularz'}</button>
                         <p className={styles.information}>Wizyty odbywają się po wcześniejszej rezerwacji telefonicznej!</p>

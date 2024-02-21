@@ -1,0 +1,69 @@
+@import '../../../../../styles/_variables.scss';
+.lightboxWrapper{
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.80);
+  z-index: 99999999;
+  .changeCurrentImage{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    z-index: 2;
+    border-radius: 50%;
+    cursor: pointer;
+    .footIcon{
+      color: $dark-pink;
+      font-size: 32px;
+    }
+  }
+  .changeCurrentImage.prev{
+    left: 12px;
+    .footIcon{
+      transform: rotate(-90deg);
+    }
+  }
+  .changeCurrentImage.next{
+    right: 12px;
+    .footIcon{
+      transform: rotate(90deg);
+    }
+  }
+  .lightbox{
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 500px;
+    .lightboxImage{
+      object-fit: cover;
+    }
+  }
+}
+
+@media(max-width: 1300px){
+  .lightboxWrapper{
+    .lightbox{
+      padding: 0 250px;
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .lightboxWrapper{
+    .lightbox{
+      padding: 0 100px;
+    }
+  }
+}
+@media(max-width: 500px){
+  .lightboxWrapper{
+    .lightbox{
+      padding: 0;
+    }
+  }
+}

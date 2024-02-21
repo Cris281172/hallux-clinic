@@ -1,0 +1,43 @@
+@import '../../../../styles/_variables.scss';
+
+.currentImage{
+  position: relative;
+  .changeCurrentImage{
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    padding: 8px;
+    transition: 0.3s;
+    &:hover{
+      background-color: #fff;
+    }
+    .footIcon{
+      width: 100%;
+      height: 100%;
+      color: $dark-pink;
+    }
+  }
+  .changeCurrentImage.prev{
+    left: 12px;
+    .footIcon{
+      transform: rotate(-90deg);
+
+    }
+  }
+  .changeCurrentImage.next{
+    right: 12px;
+    .footIcon{
+      transform: rotate(90deg);
+    }
+  }
+  .image{
+    cursor: zoom-in;
+    border-radius: 12px;
+  }
+}

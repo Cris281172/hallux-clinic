@@ -5,6 +5,8 @@ import Location from "./location/Location";
 import PriceList from "./price-list/PriceList";
 import {useEffect} from "react";
 import HelmetContent from "../../helpers/HelmetContent";
+import Reviews from "./reviews/Reviews";
+import MobilePodologist from "./mobile-podologist/MobilePodologist";
 
 const Home = () => {
     useEffect(() => {
@@ -17,7 +19,9 @@ const Home = () => {
             <Offer />
             <AboutMe />
             <PriceList />
+            <MobilePodologist />
             <Location/>
+            <Reviews />
         </>
     )
 }

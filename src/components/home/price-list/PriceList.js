@@ -11,7 +11,6 @@ const PriceList = () => {
 
     const priceConfig = PriceConfig
     const location = useLocation()
-    console.log(location)
 
     const TableValue = ({value, index}) => {
         return(
@@ -62,15 +61,15 @@ const PriceList = () => {
                     </tr>
                     <tr className={styles.table}>
                         <td className={styles.tableDescription}>Podstawowy zabieg podologiczny</td>
-                        <td className={styles.tableDescription}>150,00 zł</td>
+                        <td className={styles.tableDescription}>Od 150,00 zł</td>
                     </tr>
                     <tr className={styles.table}>
                         <td className={styles.tableDescription}>Rozszerzony zabieg podologiczny</td>
-                        <td className={styles.tableDescription}>Od 230,00 zł</td>
+                        <td className={styles.tableDescription}>Od 200,00 zł</td>
                     </tr>
                     <tr className={styles.table}>
                         <td className={styles.tableDescription}>Ortonyksja</td>
-                        <td className={styles.tableDescription}>250,00 zł</td>
+                        <td className={styles.tableDescription}>Od 200,00 zł</td>
                     </tr>
                     <tr className={styles.table}>
                         <td className={styles.tableDescription}>Konsultacja podologiczna</td>

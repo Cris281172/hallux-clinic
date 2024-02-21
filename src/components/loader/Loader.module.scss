@@ -1,0 +1,28 @@
+@import '../../styles/_variables.scss';
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: $light-pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loaderIcon{
+    font-size: 100px;
+    animation: infinite rotateAnimation 1.8s;
+    color: $dark-pink;
+  }
+}
+
+@keyframes rotateAnimation {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

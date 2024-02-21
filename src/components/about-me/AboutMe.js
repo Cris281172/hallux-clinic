@@ -15,24 +15,48 @@ const AboutMe = () => {
                     <h2 className={styles.aboutMeTitle}>O mnie</h2>
                 </div>
                 <div className={styles.topInfoWrapper}>
-                    <div>
-                        <h3 className={styles.title}>Monika Juczyńska <br /> Dyplomowany Specjalista ds. Podologii</h3>
+                    <div className={styles.topInfo}>
+                        <h3 className={styles.title}>mgr Monika Juczyńska <br /> Dyplomowany Specjalista ds. Podologii</h3>
+                        <ul className={styles.list}>
+                            <li className={styles.item}>
+                                🎓 Absolwentka Wyższej Szkoły Kosmetyki i Nauk o Zdrowiu w Łodzi
+                            </li>
+                            <li className={styles.item}>
+                                🎓 Absolwentka Wyższej Szkoły Edukacji Zdrowotnej i Nauk Społecznych w Łodzi
+                            </li>
+                            <li className={styles.item}>
+                                🎓 Absolwentka Wyższej Szkoły Teologiczno-Humanistycznej w Łodzi
+                            </li>
+                            <li className={styles.item}>
+                                🎓 Absolwentka Prywatnej Policealnej Szkoły Kosmetycznej w Łodzi
+                            </li>
+                        </ul>
                         <p className={styles.text}>
-                            mgr. Monika Juczyńska - absolwentka Wyżeszej Szkoły Kosmetyki i Nauk o Zdrowiu w Łodzi, absolwentka Wyższej Szkoły edukacji Zdrowotnej i Nauk społecznych w Łodzi, absolwentka Wyżeszj Szkoły Teologiczno Humanistycznej w Łodzi,
-                            absolwentka Prywatnej Policealnej Szkoły Kosmetycznej w Łodzi.
+                            <strong>S</strong>tale poszerzam swoją wiedzę uczestnicząc w licznych szkoleniach i kongresach podologicznych. Podologia to moja pasja, pracuję z dorosłymi i dziećmi - jednak nie ukrywam, że moim priorytetem są seniorzy, którzy ze względu na choroby współistniejące nie są w stanie samodzielnie dotrzeć do gabinetu podologicznego.
                         </p>
                         <p className={styles.text}>
-                            Stale poszerzam swoją wiedzę uczestnicząc w licznych szkoleniach i kongresach podologicznych. Podologia to moja pasja, pracuję z dorosłymi i dziećmi - jednak
-                            nie ukrywam, że moim priorytetem są seniorzy, którzy ze względu na choroby współistniejące nie są w stanie samodzielnie dotrzeć do gabinetu podologicznego.
+                            <strong>P</strong>odążam za Tobą, aby zapewnić najlepszą opiekę dla Twoich stóp, gdziekolwiek jesteś! W Hallux.Clinic wierzę, że zdrowie stóp jest kluczem do pełni życia. Dlatego mój mobilny gabinet podologiczny jest wyposażony w najnowocześniejsze technologie i procedury, aby zapewnić Ci bezpieczną i skuteczną opiekę.
+                        </p>
+                        <h4>
+                            Zobowiązana do Najwyższych Standardów Higieny i Sterylizacji!!!
+                        </h4>
+                        <p className={styles.text}>
+                            <strong>P</strong>ełna Sterylność Narzędzi i Frezów: Każde narzędzie i frez używany podczas moich zabiegów przechodzi przez rygorystyczny proces sterylizacji , zapewniając pełną dezynfekcję i bezpieczeństwo dla każdego klienta.
                         </p>
                         <p className={styles.text}>
-                            Współpraca to podstawa, dlatego w moim gabinecie przy współudziale wielu specjalistów jesteśmy w stanie postawić trafną diagnozę, a tym samym włączyć skuteczne leczenie. W centrum naszego zainteresowania pozostaje pacjent,
-                            jego zadowoloenie i zaufanie, dlatego współpracuję z najlepszymi ekspertami, aby optymalnie wykorzystać różnorodność metod i technik. Działając zespołowo zapewniamy szeroki zakres usług i profesionalizm naszym pacjentom. <br />
-                            <span>Współpracuję z:</span>
+                            <strong>S</strong>terylny Pakiet Medyczny dla Każdego Klienta: Dla Twojego bezpieczeństwa, każdy zabieg wykonuje przy użyciu nowego, sterylnego pakietu medycznego, gwarantującego najwyższe standardy higieniczne.
                         </p>
+                        <p className={styles.text}>
+                            <strong>A</strong>utoklaw – Złoty Standard Sterylizacji: Mój mobilny gabinet wykorzystuje autoklaw, urządzenie do sterylizacji, które zabezpiecza przed bakteriami, wirusami i innymi mikroorganizmami, zapewniając, że wszystkie nasze narzędzia są sterylne i bezpieczne w użyciu.
+                        </p>
+                        <p className={styles.text}>
+                            <strong>W</strong>spółpraca to podstawa, dlatego w moim gabinecie przy współudziale wielu specjalistów jesteśmy w stanie postawić trafną diagnozę, a tym samym włączyć skuteczne leczenie. W centrum naszego zainteresowania pozostaje pacjent, jego zadowolenie i zaufanie, dlatego współpracuję z najlepszymi ekspertami, aby optymalnie wykorzystać różnorodność metod i technik. Działając zespołowo zapewniamy szeroki zakres usług i profesjonalizm naszym pacjentom.
+                        </p>
+                        <span>Współpracuję z:</span>
                     </div>
-
-                    <img src={selfPhoto} alt="O mnie" className={styles.selfPhoto} />
+                    <div className={styles.selfPhotoWrapper}>
+                        <img src={selfPhoto} alt="O mnie" className={styles.selfPhoto} />
+                    </div>
                 </div>
 
                 <div className={styles.peopleWrapper}>
@@ -45,7 +69,9 @@ const AboutMe = () => {
                                 <li className={styles.item}>- email: jakubmasuje@gmail.com</li>
                             </ul>
                         </div>
-                        <img className={styles.image} src={jakub} alt="Jakub Ujejski" />
+                        <div className={styles.imageWrapper}>
+                            <img className={styles.image} src={jakub} alt="Jakub Ujejski" />
+                        </div>
                     </div>
                     <div className={styles.people}>
                         <div className={styles.information}>
@@ -56,8 +82,9 @@ const AboutMe = () => {
                                 <li className={styles.item}>- Anna Kaczorowska Łódź ul. Zbożowa 9 tel. 797-748-805</li>
                             </ul>
                         </div>
-                        <img className={styles.image} src={anna} alt="Anna Kaczorowska" />
-
+                        <div className={styles.imageWrapper}>
+                            <img className={styles.image} src={anna} alt="Anna Kaczorowska" />
+                        </div>
                     </div>
                     <div className={styles.people}>
                         <div className={styles.information}>
@@ -70,27 +97,8 @@ const AboutMe = () => {
                                 <li className={styles.item}>- Salve Medica Szparagowa 10, 91-211, 42 254 64 84</li>
                             </ul>
                         </div>
-                        <img className={styles.image} src={katarzyna} alt="Katarzyna Juczyńska" />
-
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                {/*Salon Kosmetyczny "Róza" Janusza Kusocińskiego 86B, 94-054 Łódź 42 687 6015*/}
-                <BeforeAfterGallery />
             </div>
         </div>
 

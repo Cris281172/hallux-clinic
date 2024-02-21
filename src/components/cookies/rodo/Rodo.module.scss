@@ -1,0 +1,104 @@
+@import '../../../styles/_variables.scss';
+
+.container{
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.contentWrapper {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.rodo{
+  margin-top: 80px;
+  .contactTitleWrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .contactTitle{
+      font-size: 32px;
+      font-weight: 700;
+      border-bottom: 5px solid $dark-pink;
+      padding: 0 0 15px 0;
+    }
+  }
+
+  .rodoMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 20px 20px 20px;
+    border-bottom: 2px solid #F28686;
+    .link{
+      font-size: 22px;
+      padding: 10px 15px;
+      border-radius: 2rem;
+
+    }
+    .active{
+      background-color: #F28686;
+    }
+  }
+
+  .contentWrapper{
+    margin-top: 20px;
+    p{
+      font-size: 22px;
+    }
+    h6, li{
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.6px;
+      line-height: 20px;
+    }
+    .informationalInformationWebsite{
+      h6{
+        margin: 10px 0;
+      }
+      li{
+        margin: 5px 0;
+      }
+    }
+    .rightAccess{
+      h6{
+        margin: 10px 0;
+      }
+      li{
+        margin: 7px 0;
+      }
+    }
+    .informationalInformationCart{
+      h6{
+        margin: 10px 0;
+      }
+      li{
+        margin: 5px 0;
+      }
+    }
+  }
+
+}
+
+@media(max-width: 1100px){
+  .rodo{
+    .rodoMenu{
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .rodo{
+    .rodoMenu{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
