@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:8080'
+// const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://hallux-clinic-api.onrender.com'
 
 const callToAPI = async (url, method = 'get', body = null) => {
     const config = {

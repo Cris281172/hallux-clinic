@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
 
     return(
         <>
-            <HelmetContent title="Polityka Prywatności - Hallux Clinic" desc="Masz problemy ze stopami? Umów się na wizyte już dzisiaj. Każdego pacjenta traktuje indyiwdualnie, dlatego w moim gabinecie mobilnym poczujesz się nadzwyczajnie nie wychodząc z domu."/>
+            <HelmetContent noindex={true} title="Polityka Prywatności - Podolog Łódź Hallux Clinic" desc="Masz problemy ze stopami? Umów się na wizyte już dzisiaj. Każdego pacjenta traktuje indyiwdualnie, dlatego w moim gabinecie mobilnym poczujesz się nadzwyczajnie nie wychodząc z domu."/>
             <div className={`${styles.privacyPolicy} container`}>
                 <div className={styles.container}>
                     <div className={styles.contactTitleWrapper}>

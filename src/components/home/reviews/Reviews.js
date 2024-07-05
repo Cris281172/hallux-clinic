@@ -9,20 +9,12 @@ const Reviews = () => {
     const [reviewsData, setReviewsData] = useState([])
     const [reviewIndex, setReviewIndex] = useState(0)
     const [animation, setAnimation] = useState("");
-    console.log(process.env.REACT_APP_GOOGLE_API_KEY)
+
     useEffect(() => {
-        fetch(`https://maps.googleapis.com/maps/api/place/details/json?reviews_sort=most_relevant&fields=reviews&placeid=ChIJfcxS9zcWPKoRKHGV5V_zepg&key=AIzaSyBqgMvGFdymtjIwttVQrFyUGicRhw-0AYE`, {
-            method: 'get',
-            headers: {
-                "Content-Type": "application/json",
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-        })
-            .then(res => res.json())
-            .then(res => {
-                if(res.status === 'OK'){
-                    setReviewsData(res.result.reviews)
-                }
+        callToAPI('/google-reviews', 'get', )
+            .then(res => setReviewsData(res))
+            .catch(err => {
+
             })
     }, []);
 

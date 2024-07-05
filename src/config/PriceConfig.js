@@ -5,35 +5,24 @@ export default {
             items: [
                 {
                     value: 'Konsultacja podologiczna',
-                    price: '120,00'
+                    price: '120,00',
+                    link: 'konsultacja-podologiczna'
                 },
                 {
                     value: 'Konsultacja online',
-                    price: '80,00'
+                    price: '80,00',
+                    link: 'konsultacja-online'
                 }
             ],
             link: 'diagnostyka-podologiczna'
-        },
-        {
-            title: 'Profilaktyka Podologiczna',
-            items: [
-                {
-                    value: 'Podstawowy zabieg podologiczny',
-                    price: 'od 150,00'
-                },
-                {
-                    value: 'Rozszerzony zabieg podologiczny',
-                    price: 'od 200,00'
-                },
-            ],
-            link: 'profilaktyka-podologiczna'
         },
         {
             title: 'Terapie Problemów Skórnych',
             items: [
                 {
                     value: 'Terapia pękających pięt',
-                    price: 'od 130,00'
+                    price: 'od 130,00',
+                    link: 'pekajace-piety'
                 },
                 {
                     value: 'Opracowanie podeszwy skóry stóp',
@@ -41,7 +30,7 @@ export default {
                 },
                 {
                     value: 'Usunięcie odcisku na palcu, podeszwie lub przestrzeni międzypalcowej (1 zmiana)',
-                    price: 'od 80,00'
+                    price: 'od 120,00'
                 },
                 {
                     value: 'Każdy kolejny odcisk równolegle',
@@ -63,34 +52,34 @@ export default {
             items: [
                 {
                     value: 'Obcięcie i oczyszczenie zdrowych paznokci stóp',
-                    price: '100,00'
+                    price: '120,00'
                 },
                 {
-                    value: 'Obcięcie i oczyszczenie paznokci stóp zmienionych chorobowo (grzybica, łuszczyca, wrastający paznokieć, oncholiza)',
+                    value: 'Obcięcie i oczyszczenie paznokci stóp zmienionych chorobowo (grzybica, łuszczyca, wrastający paznokieć, onycholiza)',
                     price: null
                 },
                 {
                     value: '1 palec',
-                    price: '100,00'
+                    price: '120,00'
                 },
                 {
                     value: '2 palce',
-                    price: '160,00'
+                    price: '180,00'
                 },
                 {
                     value: 'więcej',
-                    price: '200,00'
+                    price: 'od 250,00'
                 },
                 {
                     value: 'Rekonstrukcja paznokcia',
-                    price: 'od 90,00'
+                    price: 'od 120,00'
                 },
                 {
                     value: 'Hematon podpaznokciowy/usunięcie krwiaka',
                     price: '120,00'
                 },
             ],
-            link: 'terapie-problemow-aparatu-paznokwciowego'
+            link: 'terapie-problemow-aparatu-paznokciowego'
         },
         {
             title: 'Ortonyksja',
@@ -113,6 +102,22 @@ export default {
                 },
             ],
             link: 'ortonyksja'
+        },
+        {
+            title: 'Profilaktyka Podologiczna',
+            items: [
+                {
+                    value: 'Podstawowy zabieg podologiczny',
+                    price: 'od 200,00',
+                    link: 'podstawowy-zabieg-podologiczny'
+                },
+                {
+                    value: 'Rozszerzony zabieg podologiczny',
+                    price: 'od 250,00',
+                    link: 'rozszerzony-zabieg-podologiczny'
+                },
+            ],
+            link: 'profilaktyka-podologiczna'
         },
         {
             title: 'Zabiegi Uzupełniające',

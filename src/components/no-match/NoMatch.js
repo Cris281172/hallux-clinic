@@ -1,7 +1,6 @@
 import styles from './NoMatch.module.scss'
 import {Link} from "react-router-dom";
 import logoImage from '../../images/home/header/logo.webp'
-
 const NoMatch = () => {
     return(
         <div className={styles.noMatch}>

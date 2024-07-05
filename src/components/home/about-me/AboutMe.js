@@ -13,7 +13,13 @@ const AboutMe = () => {
                 <div className={styles.aboutMeInformation}>
                     <img className={styles.selfPhoto} src={selfPhoto} alt="selfPhoto" />
                     <div className={styles.textSection}>
-                        <p className={styles.text}>Współpraca to podstawa, dlatego w moim gabinecie przy współudziale wielu specjalistów jesteśmy w stanie postawić trafną diagnozę, a tym samym włączyć skuteczne leczenie. <br/> W centrum naszego zainteresowania pozostaje pacjent, jego zadowoloenie i zaufanie, dlatego współpracuję z najlepszymi ekspertami, aby optymalnie wykorzystać różnorodność metod i technik. Działając zespołowo zapewniamy szeroki zakres usług i profesionalizm naszym pacjentom.</p>
+                        <p className={styles.text}>Podologia to moja życiowa pasja, którą nieustannie pogłębiam, uczestnicząc w licznych
+                            szkoleniach i kongresach poświęconych podologii. Jako podolog z Łodzi i okolic, moje
+                            doświadczenie obejmuje pracę zarówno z dorosłymi, jak i z dziećmi. Jednak moje serce
+                            bije najsilniej dla Seniorów, którzy z powodu różnorodnych chorób współistniejących
+                            często nie są w stanie samodzielnie skorzystać z usług podologicznych. Aby zapewnić
+                            usługi spełniające najwyższe standardy, angażuję się w współpracę z uznawanymi
+                            ekspertami w dziedzinie podologii.</p>
                         <Link to="/o-mnie" className={styles.seeMore}>Zobacz więcej</Link>
                     </div>
                 </div>

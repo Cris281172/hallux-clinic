@@ -18,7 +18,7 @@ const Location = () => {
     const [map, setMap] = useState(null);
 
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyBqgMvGFdymtjIwttVQrFyUGicRhw-0AYE",
+        googleMapsApiKey: "AIzaSyAHfMiqMbV-b6WbG6xJngbR1e7v4-E-Gtw",
         mapIds: ['c0ebc78dc2d9c33b'] // Poprawione: mapIds jako tablica
     });
 
@@ -42,8 +42,19 @@ const Location = () => {
                     <div className={styles.location}>
                         <div className={styles.freeTransport}>
                             <img className={styles.locationIcon} src={locationIcon} alt="locationIcon" />
-                            <h3 className={styles.locationTitle}>Bezpłatny dojazd na terenie miasta Łodzi.</h3>
+                            <h3 className={styles.locationTitle}>Bezpłatny dojazd w zaznaczonej strefie:</h3>
                         </div>
+                        <ul>
+                            <li>
+                                📍 Łódź
+                            </li>
+                            <li>
+                                📍 Pabianice
+                            </li>
+                            <li>
+                                📍 Konstantynów Łódzki
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

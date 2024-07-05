@@ -1,0 +1,49 @@
+@import '../../styles/_variables.scss';
+.speechBubbleWrapper{
+  position: relative;
+  .speechBubble{
+    border-radius: 50%;
+    padding: 12px;
+    background-color: $dark-pink;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #3ad73a;
+      top: 12px;
+      right: 10px;
+    }
+    .speechBubbleIcon{
+      color: #fff;
+      display: block;
+      font-size: 30px;
+    }
+  }
+  .speechBubbleText{
+    opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    left: -230px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    font-weight: 300;
+    padding: 10px 15px;
+    font-size: 14px;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid $dark-pink;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+  .show{
+    opacity: 1;
+  }
+}

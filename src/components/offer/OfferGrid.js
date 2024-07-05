@@ -5,11 +5,12 @@ import styles from './OfferGrid.module.scss';
 import { IoFootstepsOutline } from "react-icons/io5";
 import footIcon from '../../images/home/offer/foot-icon.webp'
 import HelmetContent from "../../helpers/HelmetContent";
+import BackButton from "../../helpers/back-button/BackButton";
+import Breadcrumbs from "../../helpers/breadcrumbs/Breadcrumbs";
 const OfferGrid = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const navigate = useNavigate();
     const offerConfig = OfferConfig;
     const categoryId = useParams().categoryId;
 
@@ -17,10 +18,8 @@ const OfferGrid = () => {
         return (
             <div className={`${styles.offerWrapper} container`}>
                 <div className={styles.mainTitleWrapper}>
-                    <button className={styles.back} onClick={() => navigate(-1)}>
-                        <IoFootstepsOutline className={styles.icon}/> wróć
-                    </button>
-                    <h3 className={styles.mainTitle}>{element.mainTitle}</h3>
+                    <BackButton />
+                    <h1 className={styles.mainTitle}>{element.mainTitle}</h1>
                 </div>
                 <div className={styles.offerGrid}>
                     {element.value.map((value, index) => (
@@ -33,13 +32,17 @@ const OfferGrid = () => {
                         </Link>
                     ))}
                 </div>
+                <div className={styles.mainDesc}>
+                    {element.mainDesc}
+                </div>
             </div>
         );
     };
     return (
         <>
-            <HelmetContent title={`${offerConfig.find(el => el.id === categoryId).mainTitle} - Hallux Clinic`} desc="W mojej ofercie mam do zaoferowania szereg usług z zakresu profilaktyki i diagnostyki podologicznej, ortonyksji czy terapii problemów skórnych." />
+            <HelmetContent title={`${offerConfig.find(el => el.id === categoryId).mainTitle} Łódź - Podolog Łódź Hallux Clinic`} desc={offerConfig.find(el => el.id === categoryId).metaDesc} />
             <div className={styles.offer}>
+                <Breadcrumbs />
                 <div className={styles.container}>
                     {offerConfig
                         .filter((el) => el.id === categoryId)

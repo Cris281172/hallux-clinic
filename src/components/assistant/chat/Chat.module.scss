@@ -1,0 +1,20 @@
+@import '../../../styles/_variables.scss';
+.chat{
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid $dark-pink;
+  margin-bottom: 10px;
+  max-width: 700px;
+}
+
+@media(max-width: 700px){
+  .chat{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+    z-index: 99999999999;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/_variables.scss';
+.salveWrapper{
+  background-color: $light-pink;
+  padding: 100px 0;
+  .salve{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.salveTitle{
+	  font-size: 38px;
+	  font-weight: 700;
+	  border-bottom: 5px solid #F28686;
+	  padding: 0 0 15px 0;
+	}
+	.salveContent{
+		.text{
+		  font-weight: 400;
+		  font-size: 20px;
+		  line-height: 25px;
+		}
+	  	.salveButton{
+		  color: #fff;
+		  margin: 25px 0 0 0;
+		  background-color: #F28686;
+		  padding: 10px 20px;
+		  border-radius: 16px;
+		  font-size: 30px;
+		  display: flex;
+		  align-items: center;
+		  transition: 0.5s;
+		  justify-content: center;
+		}
+	}
+  }
+}

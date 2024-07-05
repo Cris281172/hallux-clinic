@@ -29,6 +29,8 @@
         width: 100%;
       }
       .headerText{
+        display: flex;
+        flex-direction: column;
         margin: 20px 0;
         .headerTextTitle{
           margin-bottom: 8px;
@@ -44,6 +46,9 @@
         }
         .thirdTitle{
           margin-left: 64px;
+        }
+        .fourthTitle{
+          margin-left: 96px;
           margin-bottom: 0;
         }
 

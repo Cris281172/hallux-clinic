@@ -11,14 +11,14 @@
     max-width: $max-page-width;
     margin: 0 auto;
     position: relative;
-    .followUsLink{
+    .logoLink{
       z-index: 2;
       left: 50px;
       bottom: 50%;
       transform: translateY(50%);
       position: absolute;
-      width: 125px;
-      .followUsImage{
+      width: 250px;
+      .logoLinkImage{
         width: 100%;
       }
     }
@@ -27,9 +27,9 @@
       margin: 0 50px 0 0;
       display: flex;
       justify-content: flex-end;
+      position: relative;
 
       .item{
-
         margin: 0 25px 0 0;
         &:nth-last-child(1){
           margin: 0;
@@ -125,16 +125,16 @@
   }
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1100px){
   .navigationWrapper{
     padding: 50px 0 50px 0;
     .navigation{
       overflow: hidden;
       .listOfLinks{
-        display: none;
+        display: flex;
         position: fixed;
-        right: -50px;
-        width: 100%;
+        right: -100%;
+        width: 80%;
         flex-direction: column;
         z-index: 500;
         background-color: #ffd3ca;
@@ -151,7 +151,7 @@
         }
       }
       .activeListOfLink{
-        display: flex;
+        right: -50px;
       }
       .hamburgerMenu{
         display: block;
@@ -160,6 +160,4 @@
     }
   }
 }
-
-
 

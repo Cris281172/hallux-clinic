@@ -1,8 +1,10 @@
 import styles from "./ContactForm.module.scss";
 import {Formik} from "formik";
 import * as Yup from 'yup';
-import {useState} from "react";
+import React, {useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
+import callToAPI from "../../api";
+import ReCAPTCHA from "react-google-recaptcha";
 const validationSchema = Yup.object().shape({
     name: Yup.string().required('Imię jest wymagane!'),
     surname: Yup.string().required('Imię jest wymagane!'),
@@ -12,6 +14,8 @@ const validationSchema = Yup.object().shape({
 })
 
 const ContactForm = () => {
+
+    const recaptchaRef = useRef()
 
     const navigate = useNavigate()
 
@@ -51,37 +55,17 @@ const ContactForm = () => {
         email: '',
         text: ""
     }
-
-    const handleSubmit = (values) => {
+    const handleSubmit = async (values) => {
         setLoading(true)
-        const formData = new FormData
-        for(const prop in values){
-            formData.append(prop, values[prop])
-        }
-
-        fetch('https://hallux.clinic/contact-hallux.php', {
-            method: 'POST',
-            body: formData,
-        })
-            .then(response => {
-                if (response.ok) {
-                    return response.text().then(text => {
-                        console.log('Sukces:', text);
-                        navigate('/kontakt/sukces');
-                        return text;
-                    });
-                } else {
-                    // Obsługa odpowiedzi z kodem błędu
-                    console.error('Błąd serwera:', response.status);
-                    navigate('/kontakt/blad');
-                    throw new Error('Błąd serwera');
-                }
+        const token = await recaptchaRef.current.executeAsync();
+        await callToAPI('/form/send', 'post', values)
+            .then(() => {
+                navigate('/kontakt/sukces');
             })
-            .catch(error => {
-                console.error('Błąd:', error);
-                setLoading(false);
+            .catch(() => {
                 navigate('/kontakt/blad');
-            });
+            })
+            .finally(() => setLoading(false))
     }
 
     return(
@@ -147,6 +131,12 @@ const ContactForm = () => {
                             Podanie danych osobowych jest dobrowolne ale niezbędne do przetworzenia Pani/Pana zapytania i
                             udzielenia odpowiedzi.
                         </p>
+                        <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey="6Lfk-rgpAAAAAInf1KFbo8drMMAz4SyGjlfOR3Pf"
+                            badge="inline"
+                            size="invisible"
+                        />
 
                         <button className={styles.submitButton} type="submit" disabled={loading ? true : false}>{loading ? 'Wysyłanie' : 'Wyślij formularz'}</button>
                         <p className={styles.information}>Wizyty odbywają się po wcześniejszej rezerwacji telefonicznej!</p>
@@ -158,3 +148,6 @@ const ContactForm = () => {
 }
 
 export default ContactForm
+
+
+// 6Lfk-rgpAAAAAGed7etFKHwGi2BeV44XeMer9GAN

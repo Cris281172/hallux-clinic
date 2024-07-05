@@ -1,12 +1,9 @@
 @import '../../styles/_variables.scss';
 
-.container{
-  max-width: 1256px;
-  margin: 0 auto;
-}
 
 .contact{
-  margin-top: 80px;
+  padding: 80px 0;
+  position: relative;
   .contactTitleWrapper{
     display: flex;
     justify-content: center;

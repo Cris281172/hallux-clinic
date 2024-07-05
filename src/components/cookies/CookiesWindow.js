@@ -14,7 +14,7 @@ const CookiesWindow = () => {
                 <div className={styles.cookiesWindow}>
                     <h4 className={styles.title}>Polityka prywatności</h4>
                     <p className={styles.text}>
-                        Strona wykorzystuje pliki cookies w celu prawidłowego działania strony, korzystania z narzędzi analitycznych i marketingowych oraz zapewniania funkcji społecznościowych. Szczegóły znajdziesz w <Link className={styles.link} to="polityka-prywatnosci">polityce prywatności</Link>.
+                        Strona wykorzystuje pliki cookies w celu prawidłowego działania strony, korzystania z narzędzi analitycznych i marketingowych oraz zapewniania funkcji społecznościowych. Szczegóły znajdziesz w <Link rel="nofollow" className={styles.link} to="polityka-prywatnosci">polityce prywatności</Link>.
                     </p>
                     <button className={styles.acceptButton} onClick={handleClick}>
                         Akceptuje

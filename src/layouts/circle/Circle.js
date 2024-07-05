@@ -1,7 +1,7 @@
 import styles from './Circle.module.scss'
 import {useState, useEffect} from 'react';
 
-const Circle = ({size, top, left, right, bottom}) => {
+const Circle = ({size, top, left, right, bottom, mobileActive = true}) => {
 
     const[hideCircle, setHideCircle] = useState(false);
     const visibilityCircle = () => {
@@ -9,6 +9,9 @@ const Circle = ({size, top, left, right, bottom}) => {
         setTimeout(() => {
             setHideCircle(false);
         }, 3000)
+    }
+    if(window.innerWidth < 1000 && !mobileActive){
+        return
     }
     return(
         <div onClick={visibilityCircle} className={hideCircle ? `${styles.hidden}` : `${styles.visible}`}>

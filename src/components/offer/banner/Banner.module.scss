@@ -16,17 +16,16 @@
       font-size: 32px;
       color: #fff;
     }
-    .bannerBreadcrumbs{
-      display: flex;
-      margin-top: 8px;
-      .bannerBreadcrumb{
-        margin-right: 8px;
-
-        span{
-          color: #fff;
-          font-size: 14px;
-          font-weight: 300;
-        }
+    .offerBreadcrumbs{
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: unset;
+      margin-top: 6px;
+      span{
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
       }
     }
   }

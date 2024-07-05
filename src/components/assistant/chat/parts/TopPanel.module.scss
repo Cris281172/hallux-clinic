@@ -1,0 +1,31 @@
+@import '../../../../styles/_variables.scss';
+
+.topPanel{
+  display: flex;
+  justify-content: space-between;
+  background: $light-pink;
+  width: 100%;
+  padding: 12px 8px;
+  border-radius: 12px;
+  align-items: center;
+  .assistantName{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    .assistantNameBeta{
+      font-size: 12px;
+      margin-left: 8px;
+      text-transform: uppercase;
+    }
+  }
+  .moreOptions{
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    .moreOptionsIcon{
+      font-size: 20px;
+    }
+  }
+}

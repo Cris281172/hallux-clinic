@@ -7,6 +7,7 @@ import Gallery from "./gallery/Gallery";
 import styles from './SingleOffer.module.scss'
 import Content from "./content/Content";
 import HelmetContent from "../../../helpers/HelmetContent";
+import BackButton from "../../../helpers/back-button/BackButton";
 
 const SingleOffer = () => {
     const { categoryId, serviceId } = useParams();
@@ -18,10 +19,11 @@ const SingleOffer = () => {
 
     return (
         <div className={styles.singleOffer}>
-            <HelmetContent title={`${service.title} - ${category.mainTitle} - Hallux Clinic`} desc={service.desc} />
+            <HelmetContent title={`${service.title} - ${category.mainTitle} - Podolog Łódź Hallux Clinic`} desc={service.desc} />
             <Banner bannerSrc={category.banner} bannerTitle={service.title} />
             <div className="container">
                 <div className={styles.singleOfferContent}>
+                    <BackButton />
                     {service.gallery !== null &&
                         <div className={styles.galleryWrapper}>
                             <Gallery gallery={service.gallery} />

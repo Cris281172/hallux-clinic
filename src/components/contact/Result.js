@@ -1,4 +1,3 @@
-import headerLogo from '../../images/home/header/header-logo.webp'
 import styles from './Result.module.scss'
 import {Link, useParams} from "react-router-dom";
 import { MdOutlineCheck, MdOutlineCancel } from "react-icons/md";

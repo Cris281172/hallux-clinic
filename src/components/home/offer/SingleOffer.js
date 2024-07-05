@@ -6,7 +6,7 @@ const SingleOffer = ({name, link, image}) => {
 
     return(
         <Link to={link} className={styles.singleOffer} style={{backgroundImage: `url(${image})`}}>
-            <h5 className={styles.singleOfferTitle}>{name}</h5>
+            <h3 className={styles.singleOfferTitle}>{name}</h3>
         </Link>
     )
 }

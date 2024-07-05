@@ -1,0 +1,25 @@
+@import '../../../styles/_variables.scss';
+.qa{
+  margin: 80px 0;
+  .qaTitleWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    .qaTitle{
+      font-size: 38px;
+      font-weight: 700;
+      text-align: center;
+      border-bottom: 5px solid #F28686;
+      padding: 0 0 15px 0;
+    }
+  }
+  .seeAllQuestions{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: $dark-pink;
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+  }
+}

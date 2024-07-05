@@ -50,6 +50,34 @@ export default [
         id: 'diagnostyka-podologiczna',
         mainTitle: 'Diagnostyka podologiczna',
         banner: banner1,
+        metaDesc: 'Zapoznaj się z naszą ofertą diagnostyki podologicznej w Łodzi – klucz do zdrowych stóp. Mobilny podolog zapewnia komfortowe badania z dojazdem. Zadbaj o swoje stopy, umów wizytę już dziś!',
+        mainDesc:
+            <>
+                <h2>Diagnostyka podologiczna w mobilnym gabinecie podologicznym - Łódź</h2>
+                <p>Nasza oferta diagnostyki podologicznej w mobilnym gabinecie w Łodzi zapewnia kompleksową opiekę i wsparcie dla zdrowia Twoich stóp. Specjalizujemy się w dwóch kluczowych usługach:</p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Konsultacja podologiczna:</strong>
+                            Podczas tej wizyty przeprowadzamy szczegółową ocenę stanu zdrowia stóp,
+                            diagnozujemy potencjalne problemy oraz dobieramy odpowiednie metody leczenia i profilaktyki.
+                            Konsultacja odbywa się bezpośrednio w Twoim domu lub wybranym miejscu, co gwarantuje wygodę i
+                            dostosowanie do indywidualnych potrzeb.
+                        </p>
+                        <p>
+                            <strong>Konsultacja online:</strong>
+                            Dla naszych klientów, którzy preferują zdalny kontakt, oferujemy konsultacje
+                            online. Ta forma wizyty umożliwia szybką i efektywną ocenę problemów podologicznych bez potrzeby
+                            wychodzenia z domu. Wystarczy dostęp do Internetu, aby otrzymać profesjonalne porady i wskazówki
+                            dotyczące dbania o zdrowie stóp.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Zapraszamy do skorzystania z naszych usług diagnostycznych, które łączą fachową wiedzę z wygodą
+                    dostępu do podologa bez względu na miejsce zamieszkania w Łodzi.
+                </p>
+            </>,
         value: [
             {
                 title: 'Konsultacja Podologiczna',
@@ -85,7 +113,7 @@ export default [
                 icon: podiatryConsultation,
                 id: 'konsultacja-podologiczna',
                 gallery: null,
-                desc: 'Zdiagnozowanie zmian na stopach, badanie na podoskopie, omówienie problematyki, propozycja zabiegu lub terapii (konsultacja bezpłatna przy każdym rozpoczętym zabiegu), pielęgnacja domowa, ocena postawy i statyki ciała.'
+                desc: 'Odkryj kompleksową profilaktykę podologiczną w Łodzi – od konsultacji z dojazdem po porady online. Zapewniamy indywidualne plany leczenia i pielęgnacji stóp. Zadbaj o swoje stopy bez wychodzenia z domu. Umów się na konsultację już teraz!'
             },
             {
                 title: 'Konsultacja Online',
@@ -103,7 +131,7 @@ export default [
                 icon: onlineConsultation,
                 id: 'konsultacja-online',
                 gallery: null,
-                desc: ''
+                desc: 'Profesjonalna konsultacja podologiczna online. Zdobądź spersonalizowane porady i diagnozy bez wychodzenia z domu. Idealne dla każdego, kto ceni wygodę. Umów się już teraz!'
             }
         ]
     },
@@ -111,6 +139,36 @@ export default [
         id: 'profilaktyka-podologiczna',
         mainTitle: 'Profilaktyka podologiczna',
         banner: banner2,
+        metaDesc: 'Zapewnij swoim stopom najlepszą ochronę z naszą profilaktyką podologiczną. Oferujemy konsultacje i plany pielęgnacji dostosowane do Twoich potrzeb. Zadbaj o stopy już dziś!',
+        mainDesc:
+            <>
+                <h2>Profilaktyka podologiczna w mobilnym gabinecie podologicznym - Łódź</h2>
+                <p>
+                    Zapewnij swoim stopom najlepszą opiekę dzięki naszym specjalistycznym zabiegom podologicznym
+                    oferowanym w mobilnym gabinecie w Łodzi. Skorzystaj z naszych usług profilaktycznych, które pomogą
+                    zachować zdrowie i komfort Twoich stóp:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Podstawowy zabieg podologiczny:</strong>
+                        Idealny wybór dla tych z Państwa, którzy chcą zadbać o podstawową
+                        higienę stóp. Zabieg obejmuje podstawowe czynności pielęgnacyjne, takie jak obcinanie paznokci,
+                        usuwanie zrogowaceń oraz porady dotyczące codziennej opieki nad stopami.
+                    </li>
+                    <li>
+                        <strong>Rozszerzony zabieg podologiczny (pedicure leczniczy):</strong>
+                        To kompleksowe rozwiązanie dla osób
+                        potrzebujących intensywniejszej opieki. Pedicure leczniczy to głębokie oczyszczanie, usuwanie
+                        problemów takich jak modzele czy wrastające paznokcie, a także specjalistyczne zabiegi mające na celu
+                        poprawę kondycji skóry stóp i paznokci.
+                    </li>
+                </ul>
+                <p>
+                    Każdy zabieg wykonujemy z najwyższą starannością, stosując sprawdzone metody i produkty, aby
+                    zapewnić najlepsze rezultaty i satysfakcję naszych klientów. Mobilny gabinet podologiczny to wygoda i
+                    profesjonalizm, dostępne bezpośrednio pod Twoimi drzwiami w Łodzi.
+                </p>
+            </>,
         value: [
             {
                 title: 'Podstawowy Zabieg Podologiczny',
@@ -149,7 +207,7 @@ export default [
                 icon: basicPodiatryTreatment,
                 id: 'podstawowy-zabieg-podologiczny',
                 gallery: [basicPodiatryTreatmentGallery1, basicPodiatryTreatmentGallery2, basicPodiatryTreatmentGallery3],
-                desc: 'Konsultacja podologiczna, skrócenie oraz oszlifowanie paznokci, oczyszczenie wałów okołopaznokciowych z nadmiaru rogowacącego naskórka, opracowanie podeszwy stóp (skalpel lub/i frezarka), wmasowanie preparatu pielęgnacyjnego przy użyciu krótkiego masażu, zalecenia podologiczne.'
+                desc: 'Odkryj podstawowy zabieg podologiczny w Łodzi z mobilnym podologiem. Profesjonalna opieka i diagnoza dla zdrowia Twoich stóp. Zadbaj o stopy, umów się już dziś!'
             },
             {
                 title: 'Rozszerzony Zabieg Podologiczny ( pedicure leczniczy)',
@@ -196,7 +254,7 @@ export default [
                 icon: extendedPodiatryTreatment,
                 id: 'rozszerzony-zabieg-podologiczny',
                 gallery: [extendedPodiatryTreatmentGallery1, extendedPodiatryTreatmentGallery2, extendedPodiatryTreatmentGallery3],
-                desc: 'Konsultacja podologiczna, skrócenie oraz oszlifowanie paznokci, oczyszczenie wałów okołopaznokciowych z nadmiaru zrogowaciałego naskórka, opracowanie bolesnych i nieestetycznych hiperkeratoz (odciski, zrogowacenia), pękające pięty, wmasowanie preparatu pielęgnacyjnego przy użyciu krótkiego masażu, zalecenia podologiczne.'
+                desc: 'Rozszerzony zabieg podologiczny w Łodzi z dojazdem do klienta. Specjalistyczny pedicure leczniczy dla zdrowia i piękna Twoich stóp. Eliminujemy odciski, modzele i więcej. Zadbaj o stopy już dziś!'
             },
         ]
     },
@@ -204,6 +262,42 @@ export default [
         id: 'terapie-problemow-skornych',
         mainTitle: 'Terapie problemów skórnych',
         banner: banner3,
+        metaDesc: 'Skuteczne terapie problemów skórnych stóp w Łodzi z mobilnym dostępem. Nasz podolog oferuje indywidualne podejście do leczenia grzybicy, pękających pięt i innych dolegliwości. Dbaj o zdrowie swoich stóp, umawiając się na wizytę już teraz!',
+        mainDesc:
+            <>
+                <h2>Terapie problemów skórnych w mobilnym gabinecie podologicznym - Łódź</h2>
+                <p>
+                    Skuteczne i profesjonalne terapie problemów skórnych stóp teraz dostępne w Twoim domu dzięki
+                    naszemu mobilnemu gabinetowi podologicznemu w Łodzi. Oferujemy szeroki zakres zabiegów, które
+                    pomogą Ci pozbyć się uporczywych problemów skórnych:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Leczenie pękających pięt:</strong>
+                        Intensywnie nawilżające i regenerujące zabiegi, które przywracają skórze pięt
+                        zdrowy wygląd i miękkość. Idealne rozwiązanie dla osób borykających się z suchą, popękaną skórą.
+                    </li>
+                    <li>
+                        <strong>Usuwanie brodawek wirusowych:</strong>
+                        Bezpieczne i skuteczne metody usuwania brodawek, wykorzystujące
+                        nowoczesne techniki, które minimalizują dyskomfort i przyspieszają gojenie.
+                    </li>
+                    <li>
+                        <strong>Usuwanie modzeli:</strong>
+                        Nasze zabiegi pomagają zredukować nadmierną zrogowaciałą skórę, przywracając
+                        stopom zdrowy wygląd i komfort podczas chodzenia.
+                    </li>
+                    <li>
+                        <strong>Usuwanie odcisków:</strong>
+                        Specjalistyczne metody usuwania bolesnych odcisków, które zapewniają ulgę i
+                        przeciwdziałają ich powstawaniu w przyszłości.
+                    </li>
+                </ul>
+                <p>
+                    Zadbaj o zdrowie i wygląd swoich stóp z naszymi specjalistycznymi terapiami, dostępnymi bezpośrednio
+                    u Ciebie w domu. Mobilny gabinet podologiczny to wygoda i efektywność, na którą możesz liczyć.
+                </p>
+            </>,
         value: [
             {
                 title: 'Pękające Pięty',
@@ -261,7 +355,7 @@ export default [
                 icon: crackedHeels,
                 id: 'pekajace-piety',
                 gallery: [crackedHeelsGallery1, crackedHeelsGallery2, crackedHeelsGallery3, crackedHeelsGallery4],
-                desc: 'Konsultacja podologiczna, dokładne opracowanie rozpadlin na piętach przy użyciu dłuta i skalpela, nałożenie opatrunku leczniczego wraz z odciążeniem, ustalenie planu terapii.'
+                desc: 'Profesjonalne leczenie pękających pięt w Łodzi z mobilnym podologiem. Skuteczne metody na regenerację i nawilżenie suchych stóp. Zadbaj o swoje stopy, umawiając się na wizytę już dziś i ciesz się zdrowiem i pięknem Twoich stóp!'
             },
             {
                 title: 'Usuwanie Brodawek Wirusowych',
@@ -299,7 +393,7 @@ export default [
                 icon: wartRemoval,
                 id: 'usuwanie-brodawek-wirusowych',
                 gallery: [wartRemovalGallery1, wartRemovalGallery2, wartRemovalGallery3, wartRemovalGallery4],
-                desc: 'Diagnoza, omówienie sposobów leczenia zmian chorobowych, oczyszczenie zmian, aplikacja preparatu, założenie opatrunku ochronnego/odciążającego, zalecenia domowe (suplementacja, zalecenie preparatów leczniczych do użytku domowego), ustalenie planu terapii.'
+                desc: 'Skuteczne usuwanie brodawek wirusowych z podeszew stóp i między palcami w Łodzi. Mobilny podolog oferuje profesjonalną diagnozę i indywidualne metody leczenia. Zadbaj o zdrowie swoich stóp, umawiając się na wizytę już dziś i pożegnaj problem brodawek wirusowych!'
             },
             {
                 title: 'Usuwanie Modzeli',
@@ -338,7 +432,7 @@ export default [
                 icon: callusRemoval,
                 id: 'usuwanie-modzeli',
                 gallery: [callusRemovalGallery1, callusRemovalGallery2],
-                desc: 'Konsultacja podologiczna, fachowe usunięcie nadmiernego zrogowacenia, modzeli, odcisków, wmasowanie preparatu pielęgnacyjnego przy użyciu krótkiego masażu, zalecenia podologiczne.'
+                desc: 'Profesjonalne usuwanie modzeli w Łodzi z mobilnym podologiem. Skuteczne leczenie i eliminacja przyczyn powstawania modzeli, zapewniające ulgę i zdrowy wygląd Twoich stóp. Zadbaj o komfort swoich stóp, umawiając się na wizytę już dziś!'
             },
             {
                 title: 'Usuwanie Odcisków',
@@ -397,14 +491,51 @@ export default [
                 icon: removePrints,
                 id: 'usuwanie-odciskow',
                 gallery: [removePrintsGallery1, removePrintsGallery2, removePrintsGallery3, removePrintsGallery4],
-                desc: 'Konsultacja podologiczna, określenie rodzaju odcisku, usunięcie, nałożenie preparatu, zastosowanie odciążenia, ustalenie planu terapii.'
+                desc: 'Zadbaj o stopy bez bólu z usługą usuwania odcisków w Łodzi. Mobilny podolog oferuje bezbolesne zabiegi, regenerując skórę i eliminując przyczyny powstawania odcisków. Ciesz się zdrowymi stopami, umawiając się na wizytę już dziś!'
             },
         ]
     },
     {
-        id: 'terapie-problemow-aparatu-paznokwciowego',
+        id: 'terapie-problemow-aparatu-paznokciowego',
         mainTitle: 'Terapie problemów aparatu paznokciowego',
         banner: banner4,
+        metaDesc: 'Odkryj skuteczne terapie problemów aparatu paznokciowego w Łodzi z dojazdem. Mobilny podolog oferuje leczenie grzybicy, wrastających paznokci i innych dolegliwości. Dbaj o zdrowie swoich paznokci, umawiając się na wizytę już dziś!',
+        mainDesc:
+            <>
+                <h2>Terapie problemów aparatu paznokciowego w mobilnym gabinecie podologicznym - Łódź</h2>
+                <p>
+                    Nasz mobilny gabinet podologiczny w Łodzi oferuje zaawansowane terapie dla problemów aparatu
+                    paznokciowego. Nasze usługi są skierowane do osób borykających się z różnorodnymi dolegliwościami
+                    paznokci, zapewniając profesjonalną opiekę i skuteczne leczenie:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Grzybica stóp i paznokci:</strong>
+                        Skuteczne leczenie grzybicy, wykorzystujące nowoczesne preparaty
+                        antygrzybicze, które pomagają przywrócić zdrowy wygląd paznokciom i skórze stóp.
+                    </li>
+                    <li>
+                        <strong>Leczenie wrastających i wkręcających paznokci:</strong>
+                        Specjalistyczne podejście do problemu wrastających
+                        paznokci, włączając innowacyjne techniki korygowania kształtu paznokcia, które zapobiegają bólowi i
+                        infekcjom.
+                    </li>
+                    <li>
+                        <strong>Onycholiza:</strong>
+                        Terapia dla pacjentów cierpiących na onycholizę, czyli odspajanie się paznokcia od łożyska,
+                        z indywidualnie dopasowanym planem leczenia mającym na celu regenerację paznokcia.
+                    </li>
+                    <li>
+                        <strong>Usunięcie krwiaka:</strong>
+                        Delikatne i bezpieczne usunięcie krwiaków podpaznokciowych, które może być
+                        spowodowane urazami lub innymi formami uszkodzeń.
+                    </li>
+                </ul>
+                <p>
+                    Zapewniamy mobilność naszych usług, co oznacza, że możemy dotrzeć do Ciebie gdziekolwiek w Łodzi.
+                    Z naszą pomocą Twoje stopy będą mogły odzyskać komfort i zdrowie.
+                </p>
+            </>,
         value: [
             {
                 title: 'Grzybica Stóp i Paznokci',
@@ -444,7 +575,8 @@ export default [
                 </>,
                 icon: footNailFungus,
                 id: 'grzybica-stop-i-paznokci',
-                gallery: [footNailFungusGallery1, footNailFungusGallery2, footNailFungusGallery3, footNailFungusGallery4]
+                gallery: [footNailFungusGallery1, footNailFungusGallery2, footNailFungusGallery3, footNailFungusGallery4],
+                desc: 'Profesjonalne leczenie grzybicy stóp i paznokci w Łodzi z dojazdem. Skuteczna diagnostyka i terapie dostosowane do Twoich potrzeb. Umów się na wizytę i odzyskaj zdrowe stopy!'
             },
             {
                 title: 'Leczenie Wrastających i Wkręcających Paznokci',
@@ -467,7 +599,8 @@ export default [
                 </>,
                 icon: screwNails,
                 id: 'leczenie-wzrastajacych-i-wkrecajacych-paznokci',
-                gallery: [screwNailsGallery1, screwNailsGallery2, screwNailsGallery3]
+                gallery: [screwNailsGallery1, screwNailsGallery2, screwNailsGallery3],
+                desc: 'Skuteczne leczenie wrastających i wkręcających się paznokci w Łodzi z dojazdem. Indywidualne metody dla ulgi i zdrowia stóp. Umów się na wizytę już dziś!'
             },
             {
                 title: 'Onycholiza',
@@ -510,7 +643,8 @@ export default [
                 </>,
                 icon: onycholysis,
                 id: "onycholiza",
-                gallery: [onycholysisGallery1, onycholysisGallery2, onycholysisGallery3]
+                gallery: [onycholysisGallery1, onycholysisGallery2, onycholysisGallery3],
+                desc: 'Zmagasz się z onycholizą? Nasza mobilna podologia w Łodzi oferuje profesjonalne leczenie i rekonstrukcję paznokci. Skuteczne metody na zdrowe paznokcie. Umów wizytę i odzyskaj piękno swoich stóp!'
             },
             {
                 title: 'Usunięcie Krwiaka',
@@ -547,13 +681,53 @@ export default [
                 </>,
                 icon: hematoma,
                 id: 'usuniecie-krwiaka',
-                gallery: null
+                gallery: null,
+                desc: 'Profesjonalne usunięcie krwiaków dla szybkiej ulgi i przyspieszenia procesu gojenia. Oferujemy skuteczne zabiegi redukujące obrzęk i minimalizujące ból. Nie pozwól, by krwiak zakłócał Twoje codzienne życie – umów się na wizytę już teraz i ciesz się zdrowiem!'
             }
         ]
     },
     {
         id: 'ortonyksja',
         mainTitle: 'Ortonyksja',
+        metaDesc: 'Skuteczna terapia ortoniksyjna dla wrastających paznokci w Łodzi. Zminimalizuj ból i uniknij operacji dzięki naszym mobilnym usługom podologicznym. Umów się już dziś!',
+        mainDesc:
+            <>
+                <h2>Ortonyksja w mobilnym gabinecie podologicznym - Łódź</h2>
+                <p>
+                    Ortonyksja to skuteczna metoda korekcji deformacji paznokci, oferowana przez nasz mobilny gabinet
+                    podologiczny w Łodzi. Specjalizujemy się w zabiegach korygujących, które pomagają przywrócić
+                    prawidłowy kształt paznokciom i zmniejszyć dyskomfort. Nasza oferta obejmuje:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Założenie klamry korygującej:</strong>
+                        Precyzyjne dopasowanie i założenie klamry, które pomagają w
+                        korygowaniu wrastających i wkręcających się paznokci.
+                    </li>
+                    <li>
+                        <strong>Przełożenie klamry korygującej:</strong>
+                        Regularne kontrolowanie i dostosowywanie klamry do postępującej
+                        korekty paznokcia, co jest kluczowe dla efektywności leczenia.
+                    </li>
+                    <li>
+                        <strong>Podklejenie klamry korygującej:</strong>
+                        Zabieg podklejania zapewnia lepsze przyleganie klamry oraz większy
+                        komfort użytkowania.
+                    </li>
+                    <li>
+                        <strong>Zdjęcie klamry korygującej na zakończenie zabiegu:</strong>
+                        <p>
+                            Usunięcie klamry po zakończeniu procesu
+                            korekty, co stanowi finalny etap leczenia.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Dzięki mobilności naszych usług, możemy oferować te specjalistyczne zabiegi bezpośrednio u Ciebie w
+                    domu, zapewniając wygodę oraz dostęp do profesjonalnej opieki podologicznej. Skorzystaj z naszych
+                    usług i poczuj ulgę w stopach.
+                </p>
+            </>,
         value: [
             {
                 title: 'Założenie klamry korygującej',
@@ -576,6 +750,53 @@ export default [
     {
         id: 'zabiegi-uzupelniajace',
         mainTitle: 'Zabiegi uzupełniające',
+        metaDesc: 'Zadbaj o stopy z zabiegami uzupełniającymi w Łodzi. Mobilny podolog oferuje indywidualne usługi pielęgnacyjne. Umów się na wizytę już dziś i ciesz się zdrowymi stopami!',
+        mainDesc:
+            <>
+                <h2>Zabiegi uzupełniające w mobilnym gabinecie podologicznym - Łódź</h2>
+                <p>
+                    W naszym mobilnym gabinecie podologicznym oferujemy kompleksowy zakres zabiegów
+                    uzupełniających, które zwiększają komfort i wspomagają leczenie podstawowych problemów stóp. Nasza
+                    oferta zawiera:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Tamponada wrastającego paznokcia:</strong>
+                        Skuteczna metoda łagodzenia bólu i zapobiegania dalszemu
+                        wrastaniu paznokci, polegająca na umieszczeniu specjalnej poduszeczki pod brzeg paznokcia.
+                    </li>
+                    <li>
+                        <strong>Opatrunek z odciążeniem:</strong>
+                        Idealne rozwiązanie dla osób cierpiących na bóle spowodowane nadmiernym
+                        obciążeniem określonych części stopy. Opatrunek zmniejsza nacisk i zapewnia szybsze gojenie.
+                    </li>
+                    <li>
+                        <strong>Opatrunek z preparatem specjalistycznym:</strong>
+                        Użycie specjalnych preparatów medycznych w
+                        opatrunkach, co przyspiesza proces leczenia i regeneracji skóry.
+                    </li>
+                    <li>
+                        <strong>Taping podologiczny (taping palucha):</strong>
+                        Technika ta jest stosowana do stabilizacji i odciążenia palucha,
+                        co pomaga w leczeniu kontuzji oraz innych problemów funkcjonalnych stopy.
+                    </li>
+                    <li>
+                        <strong>Usunięcie lakieru hybrydowego - w przypadku pedicure podologicznego:</strong>
+                        Bezpieczne usunięcie
+                        lakieru hybrydowego, co jest ważnym etapem przygotowania do pedicure leczniczego.
+                    </li>
+                    <li>
+                        <strong>Badanie stóp na podoskopie:</strong>
+                        Diagnostyka struktury stopy za pomocą podoskopu, umożliwiająca
+                        dokładną analizę i planowanie odpowiedniego leczenia.
+                    </li>
+                </ul>
+                <p>
+                    Korzystając z naszych mobilnych usług, zapewniasz sobie dostęp do profesjonalnej opieki podologicznej
+                    bez potrzeby opuszczania domu. Skontaktuj się z nami, aby dowiedzieć się więcej o możliwościach
+                    leczenia i umówić wizytę.
+                </p>
+            </>,
         value: [
             {
                 title: 'Tamponada wrastającego paznokcia.',

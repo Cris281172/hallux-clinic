@@ -14,6 +14,7 @@ import NoMatch from "../components/no-match/NoMatch";
 import Gallery from "../components/gallery/Gallery";
 import SingleOffer from "../components/offer/single-offer/SingleOffer";
 import MobilePodologist from "../components/mobile-podologist/MobilePodologist";
+import QA from "../components/qa/QA";
 const RoutesWrapper = () => {
     return(
         <Routes>
@@ -30,8 +31,9 @@ const RoutesWrapper = () => {
                 <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
                 <Route path="/rodo/:id" element={<RodoWrapper />} />
                 <Route path="/mobilny-podolog" element={<MobilePodologist />} />
+                <Route path="/qa" element={<QA />}></Route>
             </Route>
-            <Route path="*" element={<NoMatch />} />
+            <Route path="*" element={<NoMatch />}   />
         </Routes>
     )
 }

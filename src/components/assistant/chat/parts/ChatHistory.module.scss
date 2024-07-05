@@ -1,0 +1,65 @@
+@import '../../../../styles/_variables.scss';
+.chatHistory{
+  margin: 20px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 350px;
+  overflow: auto;
+  .assistantMessage{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50px;
+    .chatGPTinfo{
+      font-size: 10px;
+      font-weight: 300;
+      color: #8d8a8a;
+    }
+    p{
+      padding: 10px;
+      border-radius: 20px;
+      font-weight: 300;
+      line-height: 18px;
+      letter-spacing: 0.9px;
+      background-color: #f2f2f2;
+    }
+  }
+  .userMessage{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+    p{
+      padding: 10px;
+      border-radius: 20px;
+      background: $light-pink;
+      font-weight: 300;
+      line-height: 18px;
+      letter-spacing: 0.9px;
+    }
+  }
+}
+
+@media(max-width: 700px){
+  .chatHistory{
+    max-height: calc(100% - 44px - 50px);
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 30px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #F28686FF 90%,#0000);
+  background:
+          var(--_g) 0%   50%,
+          var(--_g) 50%  50%,
+          var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20%{background-position:0%   0%, 50%  50%,100%  50%}
+  40%{background-position:0% 100%, 50%   0%,100%  50%}
+  60%{background-position:0%  50%, 50% 100%,100%   0%}
+  80%{background-position:0%  50%, 50%  50%,100% 100%}
+}

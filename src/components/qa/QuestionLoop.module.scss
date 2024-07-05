@@ -1,0 +1,66 @@
+@import '../../styles/_variables.scss';
+.questionLoop{
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  .questionButton{
+    width: 100%;
+    background-color: $light-pink;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 50px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    .questionButtonFoot{
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      font-size: 20px;
+      transition: 0.3s;
+    }
+  }
+  .answerText{
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid $light-pink;
+    opacity: 0;
+    margin: 0;
+    height: 0;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}
+
+.active{
+  opacity: 1;
+  height: fit-content;
+  .questionButton{
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+    .questionButtonFoot{
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  .answerText{
+    padding: 25px;
+    opacity: 1;
+    height: fit-content;
+    animation: qaItemActive 0.5s;
+  }
+}
+
+
+@keyframes qaItemActive {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

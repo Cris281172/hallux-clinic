@@ -1,23 +1,30 @@
 @import '../../../styles/_variables.scss';
 
-.container{
-  max-width: 1256px;
-  margin: 0 auto;
-}
-
 .priceList{
-  margin: 80px 0;
+  position: relative;
+  padding: 80px 0;
   .titleWrapper{
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
     .priceListTitle{
       border-bottom: 5px solid #F28686;
       padding: 0 0 15px 0;
       font-size: 38px;
       font-weight: 700;
+      text-align: center;
+    }
+    .priceListText{
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      max-width: 800px;
     }
   }
+
   .tableWrapper{
     margin-bottom: 80px;
     .titleWrapper{
@@ -53,7 +60,7 @@
         font-size: 18px;
         text-align: center;
         border: 1px solid $light-pink;
-        padding: 10px 25px;
+        padding: 10px 12px;
         font-weight: 400;
       }
       .table{

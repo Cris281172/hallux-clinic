@@ -7,7 +7,7 @@ const Footer = () => {
         <div className={styles.footerWrapper}>
             <footer className={styles.footer}>
                 <nav className={styles.navigation}>
-                    <h5 className={styles.navigationTitle}>Usługi</h5>
+                    <div className={styles.navigationTitle}>Usługi</div>
                     <ul className={styles.listOfLink}>
                         <li className={styles.item}>
                             <Link to="/usluga/diagnostyka-podologiczna" className={styles.link}>Diagnostyka podologiczna</Link>
@@ -49,19 +49,19 @@ const Footer = () => {
                             </ul>
                         </li>
                         <li className={styles.item}>
-                            <Link to="/usluga/terapie-problemow-aparatu-paznokwciowego" className={styles.link}>Terapie problemów aparatu paznokciowego</Link>
+                            <Link to="/usluga/terapie-problemow-aparatu-paznokciowego" className={styles.link}>Terapie problemów aparatu paznokciowego</Link>
                             <ul className={styles.sublistOfLink}>
                                 <li className={styles.sublistOfLinkItem}>
-                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokwciowego/grzybica-stop-i-paznokci">Grzybica Stóp i Paznokci</Link>
+                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokciowego/grzybica-stop-i-paznokci">Grzybica Stóp i Paznokci</Link>
                                 </li>
                                 <li className={styles.sublistOfLinkItem}>
-                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokwciowego/leczenie-wzrastajacych-i-wkrecajacych-paznokci">Leczenie Wrastających i Wkręcających Paznokci</Link>
+                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokciowego/leczenie-wzrastajacych-i-wkrecajacych-paznokci">Leczenie Wrastających i Wkręcających Paznokci</Link>
                                 </li>
                                 <li className={styles.sublistOfLinkItem}>
-                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokwciowego/onycholiza">Onycholiza</Link>
+                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokciowego/onycholiza">Onycholiza</Link>
                                 </li>
                                 <li className={styles.sublistOfLinkItem}>
-                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokwciowego/usuniecie-krwiaka">Usunięcie Krwiaka</Link>
+                                    <Link className={styles.sublistOfLinkItemLink} to="/usluga/terapie-problemow-aparatu-paznokciowego/usuniecie-krwiaka">Usunięcie Krwiaka</Link>
                                 </li>
                             </ul>
                         </li>
@@ -74,7 +74,7 @@ const Footer = () => {
                     </ul>
                 </nav>
                 <nav className={styles.navigation}>
-                    <h5 className={styles.navigationTitle}>Nawigacja</h5>
+                    <div className={styles.navigationTitle}>Nawigacja</div>
                     <ul className={styles.listOfLink}>
                         <li className={styles.item}>
                             <Link to="/usluga" className={styles.link}>Usługa</Link>
@@ -89,49 +89,56 @@ const Footer = () => {
                             <Link to="/kontakt" className={styles.link}>Kontakt</Link>
                         </li>
                         <li className={styles.item}>
-                            <Link to="/rodo/obowiazek-informacyjny" className={styles.link}>Rodo</Link>
+                            <Link to="/mobilny-podolog" className={styles.link}>Mobilny podolog</Link>
                         </li>
                         <li className={styles.item}>
-                            <Link to="/polityka-prywatnosci" className={styles.link}>Polityka prywatności</Link>
+                            <Link to="/qa" className={styles.link}>Q&A</Link>
+                        </li>
+                        <li className={styles.item}>
+                            <Link rel="nofollow" to="/rodo/obowiazek-informacyjny" className={styles.link}>Rodo</Link>
+                        </li>
+                        <li className={styles.item}>
+                            <Link rel="nofollow" to="/polityka-prywatnosci" className={styles.link}>Polityka prywatności</Link>
                         </li>
                     </ul>
                 </nav>
                 <div className={styles.contact}>
-                    <h5 className={styles.contactTitle}>Kontakt</h5>
+                    <div className={styles.contactTitle}>Kontakt</div>
                     <div className={styles.sectionWrapper}>
                         <div className={styles.contactSection}>
-                            <h6 className={styles.contactSectionTitle}>Numer telefonu</h6>
+                            <div className={styles.contactSectionTitle}>Numer telefonu</div>
                             <a  href="tel:+48459410096" className={styles.phoneNumber}>+48 459 410 096</a>
                         </div>
                         <div className={styles.contactSection}>
-                            <h6 className={styles.contactSectionTitle}>Email</h6>
+                            <div className={styles.contactSectionTitle}>Email</div>
                             <a  href="mailto:hallux.clinic@gmail.com" className={styles.email}>hallux.clinic@gmail.com</a>
                         </div>
                         <div className={styles.contactSection}>
-                            <h6 className={styles.email}>
+                            <div className={styles.email}>
                                 Armii Krajowej 44; 94-046 Łódź
-                            </h6>
-                            <h6 className={styles.email}>
+                            </div>
+                            <div className={styles.email}>
                                 Nip: 7261496883
-                            </h6>
-                            <h6 className={styles.email}>
+                            </div>
+                            <div className={styles.email}>
                                 Regon: 471387913
-                            </h6>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </footer>
             <div className={`${styles.haluxInformation} container`}>
-                <img src={logo} alt="headerLogo" className={styles.logo}/>
+                <img src={logo} alt="Podologia Łódź Retkinia, Śródmieście" className={styles.logo}/>
                 <div className={styles.socialMedia}>
                     {/*<h5 className={styles.socialMediaTitle}>Odwiedź również: </h5>*/}
-                    <a href="https://www.facebook.com/profile.php?id=61551609556581" target="_blank" className={styles.facebookLink}>
+                    <a rel="nofollow" href="https://www.facebook.com/profile.php?id=61551609556581" target="_blank" className={styles.facebookLink}>
                         <FaSquareFacebook className={styles.facebookIcon} />
                     </a>
                 </div>
             </div>
             <div className={styles.bottomFooter}>
+                <p>Podolog Łódź Hallux Clinic - Mobilne pogotowie dla Ciebie</p>
                 <p className={styles.bottomFooterText}>&copy; Wszelkie prawa zastrzeżone | Created By <a href="https://juczynski.pl" className={styles.author}>Krzysztof Junior Juczyński</a></p>
             </div>
         </div>
