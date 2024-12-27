@@ -13,13 +13,17 @@ const AboutMe = () => {
                 <div className={styles.aboutMeInformation}>
                     <img className={styles.selfPhoto} src={selfPhoto} alt="selfPhoto" />
                     <div className={styles.textSection}>
-                        <p className={styles.text}>Podologia to moja życiowa pasja, którą nieustannie pogłębiam, uczestnicząc w licznych
-                            szkoleniach i kongresach poświęconych podologii. Jako podolog z Łodzi i okolic, moje
-                            doświadczenie obejmuje pracę zarówno z dorosłymi, jak i z dziećmi. Jednak moje serce
-                            bije najsilniej dla Seniorów, którzy z powodu różnorodnych chorób współistniejących
-                            często nie są w stanie samodzielnie skorzystać z usług podologicznych. Aby zapewnić
-                            usługi spełniające najwyższe standardy, angażuję się w współpracę z uznawanymi
-                            ekspertami w dziedzinie podologii.</p>
+                        <p className={styles.text}>Podologia to nie tylko moja profesja, ale przede wszystkim pasja. Dążąc do perfekcji, nieustannie
+                            rozwijam swoje umiejętności, uczestnicząc w licznych szkoleniach i prestiżowych kongresach
+                            podologicznych. Jako doświadczony specjalista w gabinecie podologicznym w Łodzi, moim celem
+                            jest dostarczanie usług najwyższej jakości dla każdego – zarówno dorosłych, jak i dzieci.
+                            Szczególną uwagę poświęcam seniorom, którzy z różnych przyczyn, w tym chorób
+                            współistniejących, nie mogą samodzielnie dotrzeć do naszego gabinetu. Ich dobrostan i komfort są
+                            dla mnie priorytetem, co motywuje mnie do ciągłego poszerzania mojej wiedzy i umiejętności.
+                            Współpraca z cenionymi specjalistami z różnych dziedzin medycyny pozwala mi na utrzymanie
+                            najwyższych standardów usług podologicznych, co potwierdzają liczne pozytywne opinie naszych
+                            pacjentów. Gabinet podologiczny w Łodzi to miejsce, gdzie pasja łączy się z profesjonalizmem, a
+                            zdrowie Twoich stóp jest naszym największym zobowiązaniem.</p>
                         <Link to="/o-mnie" className={styles.seeMore}>Zobacz więcej</Link>
                     </div>
                 </div>

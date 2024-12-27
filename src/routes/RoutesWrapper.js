@@ -9,12 +9,16 @@ import AboutMe from "../components/about-me/AboutMe";
 import Result from "../components/contact/Result";
 import PrivacyPolicy from "../components/cookies/privacy-policy/PrivacyPolicy";
 import RodoWrapper from "../components/cookies/rodo";
-import InformationalInformationWebsite from "../components/cookies/rodo/InformationalInformationWebsite";
 import NoMatch from "../components/no-match/NoMatch";
 import Gallery from "../components/gallery/Gallery";
 import SingleOffer from "../components/offer/single-offer/SingleOffer";
 import MobilePodologist from "../components/mobile-podologist/MobilePodologist";
 import QA from "../components/qa/QA";
+import BlogLayout from "../layouts/BlogLayout";
+import CreatePost from "../components/admin/blog/CreatePost";
+import AdminLayout from "../layouts/BlogLayout";
+import BlogGrid from "../components/blog/BlogGrid";
+import Post from "../components/blog/post/Post";
 const RoutesWrapper = () => {
     return(
         <Routes>
@@ -32,6 +36,12 @@ const RoutesWrapper = () => {
                 <Route path="/rodo/:id" element={<RodoWrapper />} />
                 <Route path="/mobilny-podolog" element={<MobilePodologist />} />
                 <Route path="/qa" element={<QA />}></Route>
+                <Route path={'/blog'} element={<BlogGrid />} />
+                <Route path={'/blog/:slug'} element={<Post />} />
+
+            </Route>
+            <Route path={'/admin'} element={<AdminLayout />}>
+                <Route path={'post/create'} element={<CreatePost />} />
             </Route>
             <Route path="*" element={<NoMatch />}   />
         </Routes>

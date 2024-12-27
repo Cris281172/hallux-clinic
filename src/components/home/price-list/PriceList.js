@@ -69,7 +69,7 @@ const PriceList = () => {
                     </tr>
                     <tr className={styles.table}>
                         <td className={styles.tableDescription}>Terapia brodawki wirusowej (kurzajka) 1-2 zmiany</td>
-                        <td className={styles.tableDescription}>100,00 zł</td>
+                        <td className={styles.tableDescription}>120,00 zł</td>
                     </tr>
                     <tr className={styles.table}>
                         <td className={styles.tableDescription}>Obcięcie i oczyszczenie zdrowych paznokci stóp</td>

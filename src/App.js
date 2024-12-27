@@ -22,7 +22,7 @@ const App = () => {
             <BrowserRouter>
                 <ScrollToTop />
                 <RoutesWrapper />
-                <Assistant />
+                {/*<Assistant />*/}
             </BrowserRouter>
         </div>
     );

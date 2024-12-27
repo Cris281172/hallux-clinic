@@ -10,7 +10,7 @@ export default {
                 },
                 {
                     value: 'Konsultacja online',
-                    price: '80,00',
+                    price: '0,00',
                     link: 'konsultacja-online'
                 }
             ],
@@ -21,7 +21,7 @@ export default {
             items: [
                 {
                     value: 'Terapia pękających pięt',
-                    price: 'od 130,00',
+                    price: 'od 150,00',
                     link: 'pekajace-piety'
                 },
                 {
@@ -38,11 +38,11 @@ export default {
                 },
                 {
                     value: 'Terapia brodawki wirusowej (kurzajka) 1-2 zmiany',
-                    price: '100,00'
+                    price: '120,00'
                 },
                 {
                     value: 'Każda kolejna brodawka usuwana równolegle',
-                    price: '20,00'
+                    price: '30,00'
                 },
             ],
             link: 'terapie-problemow-skornych'
@@ -98,7 +98,7 @@ export default {
                 },
                 {
                     value: 'Zdjęcie klamry korygującej na zakończenie zabiegu',
-                    price: '90,00'
+                    price: '120,00'
                 },
             ],
             link: 'ortonyksja'
@@ -140,7 +140,7 @@ export default {
                 },
                 {
                     value: 'Usunięcie lakieru hybrydowego w przypadku pedicure podologicznego',
-                    price: '30,00'
+                    price: '40,00'
                 },
                 {
                     value: 'Badanie stóp na podoskopie',
